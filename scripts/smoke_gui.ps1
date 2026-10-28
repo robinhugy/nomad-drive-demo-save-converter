@@ -1,14 +1,12 @@
-param([string]$Exe,[string]$SaveRoot,[string]$RuntimeRoot)
+param([string]$Exe,[string]$SaveRoot)
 $ErrorActionPreference='Stop'
 $repoRoot=[IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
 $version=(Get-Content -LiteralPath (Join-Path $repoRoot 'VERSION') -Raw).Trim()
 if(-not $Exe){$Exe=Join-Path $repoRoot ('dist\NomadDriveSaveConverter-v'+$version+'-win-x64.exe')}
 if(-not $SaveRoot){$SaveRoot=Join-Path $repoRoot '.build\smoke-saves'}
-if(-not $RuntimeRoot){$RuntimeRoot=Join-Path $repoRoot '.build\smoke-runtime'}
 if(-not (Test-Path -LiteralPath $SaveRoot)){throw 'Run scripts/create_smoke_fixture.py first. This test requires isolated synthetic fixtures.'}
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
-$env:NOMADDRIVE_CONVERTER_RUNTIME_DIR=$RuntimeRoot
 $assembly=[Reflection.Assembly]::LoadFrom([IO.Path]::GetFullPath($Exe))
 $type=$assembly.GetType('ConverterWindow');$flags=[Reflection.BindingFlags]'Instance,NonPublic'
 $form=[Activator]::CreateInstance($type)
@@ -53,7 +51,12 @@ try {
     if(-not (Field 'details').Text.Contains('ground stashes')){throw 'Loot cleanup scope is missing'}
     if((Field 'convert').Text -ne 'Create cleaned copy'){throw 'Loot cleanup copy action is missing'}
     $resources=$assembly.GetManifestResourceNames()
-    if('NomadDriveSaveConverter.Engine' -notin $resources -or 'NomadDriveSaveConverter.Notices' -notin $resources){throw 'Embedded resources are missing'}
+    if('NomadDriveSaveConverter.Mapping' -notin $resources -or 'NomadDriveSaveConverter.Notices' -notin $resources){throw 'Embedded resources are missing'}
+    if('NomadDriveSaveConverter.Engine' -in $resources -or $assembly.GetType('EngineProvider')){throw 'The removed executable engine is still present'}
+    $type.GetField('busy',$flags).SetValue($form,$true)
+    $form.Close()
+    if($form.IsDisposed){throw 'The window closed during an active operation'}
+    $type.GetField('busy',$flags).SetValue($form,$false)
     $form.Size=[Drawing.Size]::new(880,780);$form.PerformLayout();PumpUntilIdle
     if((Field 'details').Height -lt 45){throw 'Report is hidden at minimum size'}
     $form.Size=[Drawing.Size]::new(1040,890);$form.PerformLayout();PumpUntilIdle
@@ -64,5 +67,5 @@ try {
     $bitmap.Save($bitmapPath,[Drawing.Imaging.ImageFormat]::Png);$bitmap.Dispose()
     $after=@(Get-ChildItem -LiteralPath $SaveRoot -Directory).Count
     if($after -ne $before){throw 'Read-only GUI smoke test created extra worlds'}
-    Write-Output 'PASS: automatic startup, no duplicate worlds, English preview, player limit, current-format repair, opt-in loot cleanup preview, single-EXE engine and notices.'
+    Write-Output 'PASS: automatic startup, no duplicate worlds, English preview, player limit, current-format repair, opt-in loot cleanup preview, direct .NET implementation and notices.'
 } finally {$form.Dispose()}

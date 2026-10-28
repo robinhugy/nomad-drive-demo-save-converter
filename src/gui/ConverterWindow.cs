@@ -6,7 +6,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
 public sealed class ConverterWindow : Form
@@ -19,14 +18,16 @@ public sealed class ConverterWindow : Form
     readonly Label status = new Label();
     readonly ProgressBar progress = new ProgressBar();
     readonly Button convert = new Button(), refresh = new Button(), refreshList = new Button(), browseSaves = new Button(), browseGame = new Button();
-    readonly string app = AppDomain.CurrentDomain.BaseDirectory;
-    readonly JavaScriptSerializer json = new JavaScriptSerializer { MaxJsonLength = 32 * 1024 * 1024 };
     bool busy, filling, previewReady;
     Dictionary<string, object> current;
 
     public ConverterWindow()
     {
         Text = "Nomad Drive Save Converter " + BuildInfo.Version;
+        using(var resource=System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("NomadDriveSaveConverter.Icon"))
+        {
+            if(resource!=null)using(var icon=new Icon(resource,new Size(32,32)))Icon=(Icon)icon.Clone();
+        }
         Font = new Font("Segoe UI", 10); Size = new Size(1040, 890); MinimumSize = new Size(880, 780);
         StartPosition = FormStartPosition.CenterScreen; AutoScaleMode = AutoScaleMode.Font;
         var layout = new TableLayoutPanel { Dock = DockStyle.Fill, Padding = new Padding(20), ColumnCount = 1, RowCount = 9 };
@@ -108,6 +109,7 @@ public sealed class ConverterWindow : Form
         var footer=new TableLayoutPanel{Dock=DockStyle.Fill,ColumnCount=1,RowCount=2};footer.RowStyles.Add(new RowStyle(SizeType.Absolute,6));footer.RowStyles.Add(new RowStyle(SizeType.Percent,100));
         progress.Dock=DockStyle.Fill;progress.Style=ProgressBarStyle.Continuous;footer.Controls.Add(progress,0,0);status.Dock=DockStyle.Fill;status.TextAlign=ContentAlignment.MiddleLeft;footer.Controls.Add(status,0,1);layout.Controls.Add(footer,0,8);
         Shown+=async(s,e)=>await AutomaticBatch();
+        FormClosing+=(s,e)=>{if(busy){e.Cancel=true;status.Text="Please wait for the current operation to finish before closing.";}};
     }
 
     bool ChooseFolder(TextBox box)
@@ -118,12 +120,6 @@ public sealed class ConverterWindow : Form
     static string S(Dictionary<string,object> row,string key) {object value;return row.TryGetValue(key,out value)&&value!=null?Convert.ToString(value):"";}
     static string WindowsLines(string text) {return (text??"").Replace("\r\n","\n").Replace("\r","\n").Replace("\n",Environment.NewLine);}
     void ShowDetails(string text) {details.Text=WindowsLines(text);details.SelectionStart=0;details.ScrollToCaret();}
-    static string Quote(string arg)
-    {
-        var b=new StringBuilder("\"");int slashes=0;
-        foreach(char ch in arg){if(ch=='\\'){slashes++;continue;}if(ch=='\"'){b.Append('\\',slashes*2+1);b.Append(ch);}else{b.Append('\\',slashes);b.Append(ch);}slashes=0;}
-        b.Append('\\',slashes*2);b.Append('"');return b.ToString();
-    }
     void SetBusy(bool value,string message)
     {
         busy=value;foreach(Control control in new Control[]{saves,game,slots,replace,cleanup,players,newName,refresh,refreshList,browseSaves,browseGame})control.Enabled=!value;
@@ -132,23 +128,7 @@ public sealed class ConverterWindow : Form
     }
     async Task<Dictionary<string,object>> RunEngine(params string[] args)
     {
-        string engine=EngineProvider.GetEnginePath();
-        string report=Path.Combine(Path.GetTempPath(),"NomadDriveConverter_"+Guid.NewGuid().ToString("N")+".json");
-        var arguments=new List<string>(args);arguments.Add("--report");arguments.Add(report);
-        try {
-            await Task.Run(()=>{
-                using(var process=new Process()){
-                    process.StartInfo=new ProcessStartInfo(engine,string.Join(" ",arguments.Select(Quote).ToArray())){UseShellExecute=false,CreateNoWindow=true,WindowStyle=ProcessWindowStyle.Hidden,WorkingDirectory=app};
-                    process.Start();
-                    // Closing the interface does not kill a conversion in flight.
-                    process.WaitForExit();
-                }
-            });
-            if(!File.Exists(report))throw new InvalidOperationException("The conversion engine did not return a result.");
-            var result=json.Deserialize<Dictionary<string,object>>(File.ReadAllText(report,Encoding.UTF8));
-            if(result.ContainsKey("error"))throw new InvalidOperationException(S(result,"error"));
-            return result;
-        } finally {if(File.Exists(report))File.Delete(report);}
+        return await Task.Run(()=>NomadSave.ConverterEngine.Run(args));
     }
     async Task RefreshSlots(bool preview=true)
     {
@@ -222,8 +202,7 @@ public sealed class ConverterWindow : Form
     [STAThread] public static int Main(string[] args)
     {
         if(args.Length>0){
-            var info=new ProcessStartInfo(EngineProvider.GetEnginePath(),string.Join(" ",args.Select(Quote).ToArray())){UseShellExecute=false,CreateNoWindow=true,WindowStyle=ProcessWindowStyle.Hidden};
-            using(var process=Process.Start(info)){process.WaitForExit();return process.ExitCode;}
+            return NomadSave.ConverterEngine.CommandLine(args);
         }
         Application.EnableVisualStyles();Application.SetCompatibleTextRenderingDefault(false);Application.Run(new ConverterWindow());return 0;
     }

@@ -10,12 +10,12 @@ The app and its reports are in English.
 
 ## Download and run
 
-1. Download **`NomadDriveSaveConverter-v1.2.1-win-x64.exe`** from the repository's **Releases** section, or extract the Windows release ZIP.
+1. Download **`NomadDriveSaveConverter-v1.3.0-win-x64.exe`** from the repository's **Releases** section, or extract the Windows release ZIP.
 2. Save and close the game, then run the EXE from a writable folder.
 3. The app detects the save folder and Steam libraries, creates backups, and processes all eligible worlds. Read its completion report.
 4. Start the game and select the newest **`(converted)`** entries in **Load Game**.
 
-The EXE is self-contained: no separate engine file, Python installation or installer is needed. Windows 10/11 x64 with .NET Framework 4.8 is supported. The engine is extracted to the app's own local runtime cache on first use. License texts are available through **Licenses**.
+Version 1.3 runs the conversion code directly inside one Windows EXE using .NET Framework 4.8. It does not bundle a Python runtime, extract an executable engine or start a converter subprocess. Windows 10/11 x64 is supported. License texts are available through **Licenses**.
 
 If the game is open, writing stops until you close it and click **Back up and convert all**. If detection cannot find an unusual installation, use **Browse**. Clicking a world also gives access to a single-world preview, custom name and player limit.
 
@@ -29,7 +29,7 @@ If the game is open, writing stops until you close it and click **Back up and co
 | Inspected Steam build | 26274244 |
 | Current-format action | Multiplayer repair and opt-in legacy-loot cleanup in a separate copy |
 
-Version 1.2.1 checks the 28 October 2026 update. Existing format-16 worlds do not need reconversion solely for this update.
+Version 1.3.0 retains the motorhome-and-floppy application icon and supports the 28 October 2026 update. Existing format-16 worlds do not need reconversion solely for this update.
 
 The app checks the installed game's catalog fingerprint before processing saves. Other game updates need an updated compatibility mapping; changing the fingerprint alone is not sufficient.
 
@@ -74,8 +74,6 @@ Cleanup is recorded in each new slot's report, including every removed GUID, ite
 
 Backups: `%LOCALAPPDATA%\NomadDriveSaveConverter\Backups`
 
-Runtime cache: `%LOCALAPPDATA%\NomadDriveSaveConverter\Runtime`
-
 Each new world contains `CONVERSION_REPORT.txt` and `conversion-report.json`, including replacements, omissions, player slots and verification results. Batch reports are stored with the backups when worlds are created. All processing is local; the app has no upload or telemetry feature.
 
 ## What is preserved
@@ -86,20 +84,21 @@ Removed assets can be replaced with explicit alternatives, such as an off-road t
 
 ## Known limitations
 
+- Earlier packaged releases received antivirus detections, including a COMODO report for their embedded engine. Version 1.3.0 replaces that architecture with direct .NET code and includes no executable engine or Python runtime. This is not an antivirus approval; the new EXE needs its own scan and no vendor verdict has been obtained. Publish the report for the exact release hash.
+
 - Updated terrain, buildings and model dimensions can differ at the old coordinates. Inspect the converted world, save, exit, and reload it before continuing a long session.
 - Placed objects are linked to a current plane on the same container while retaining their saved world pose. Moving supports and changed models may need manual adjustment.
 - Paint mapping for multi-surface bodies follows the current prefab hierarchy and is provisional. One old RV-Hippie surface no longer exists. Unmapped image bytes remain in the original backup and archived sidecars.
 - Legacy quests and the old shared odometer are archived; the new quest and per-vehicle odometer systems start from defaults. Old paint aging is no longer supported. New hotbar/backpack fields begin empty.
 - The compatibility check targets one inspected Steam build. This is not a general save editor or a guarantee for future updates.
 
-File compatibility was checked with the actual game's envelope and manifest readers on three legacy worlds. Initial in-game loading and multiplayer activation have also been reported working. That is a smoke check, not exhaustive testing of every item or multiplayer combination.
+Version 1.3.0 was checked with the actual game's envelope and manifest readers on conversions and cleaned copies of three legacy worlds, in addition to the synthetic regression tests and independent decoded-save comparisons. Initial in-game loading and multiplayer activation were reported working with the earlier engine. The rewritten version still needs an in-game load/save/reload check; these file checks do not test every item or multiplayer combination.
 
 ## Build and test
 
-The source requires Python 3.11+; the Windows executable is built with 64-bit Python 3.11, PyInstaller and the Windows .NET Framework C# compiler. Game assemblies are not needed to build or run the synthetic tests.
+The Windows executable is compiled from C# with the .NET Framework compiler supplied by Windows. Python 3.11+ is used only for build verification, the independent reference implementation and source packaging; it is not included in the release. No third-party Python packages or game assemblies are needed. The test build reruns the established regression cases against the C# engine and compares decoded results with the Python reference.
 
 ```powershell
-python -m pip install -r requirements-build.txt
 python -m unittest discover -s tests -v
 powershell -ExecutionPolicy Bypass -File scripts\build.ps1 -Python python
 ```
@@ -110,24 +109,24 @@ Build outputs are placed in `dist/`:
 - Release ZIP containing the EXE, README, release notes, license texts and checksums.
 - `SHA256SUMS.txt` for the release assets.
 
-The build script embeds both the conversion engine and license notices in the final EXE. It never copies game files or personal saves into a release. The GitHub Actions workflow runs the same synthetic tests and Windows build, then provides downloadable build artifacts; publishing a GitHub Release remains a manual step.
+The build script compiles the conversion code into the final EXE and embeds the compatibility mapping, application icon and license notices. No other executable is embedded. It never copies game files or personal saves into a release. The GitHub Actions workflow runs the same synthetic tests and Windows build, then provides downloadable build artifacts; publishing a GitHub Release remains a manual step.
 
 ### Developer CLI
 
 ```powershell
-python src\engine\converter_engine.py --list
-python src\engine\converter_engine.py --batch
-python src\engine\converter_engine.py --preview --source "PATH_TO_SLOT"
-python src\engine\converter_engine.py --convert --source "PATH_TO_SLOT" --players 4
-python src\engine\converter_engine.py --repair-multiplayer --source "PATH_TO_SLOT" --players 4
-python src\engine\converter_engine.py --preview --source "PATH_TO_CONVERTED_SLOT" --clean-legacy-loot
-python src\engine\converter_engine.py --batch --clean-legacy-loot
+.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --list
+.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --batch
+.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --preview --source "PATH_TO_SLOT"
+.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --convert --source "PATH_TO_SLOT" --players 4
+.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --repair-multiplayer --source "PATH_TO_SLOT" --players 4
+.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --preview --source "PATH_TO_CONVERTED_SLOT" --clean-legacy-loot
+.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --batch --clean-legacy-loot
 ```
 
-Use `--game`, `--output-root`, `--backup-root` or `--report` for explicit paths. The GUI EXE forwards the same arguments to its embedded engine; use `--report result.json` to retrieve output from the windowed executable.
+Use `--game`, `--output-root`, `--backup-root` or `--report` for explicit paths. The EXE accepts the same arguments as the optional Python reference CLI; use `--report result.json` to retrieve output from the windowed executable. It runs conversions in process. Closing the window is deferred while an operation is active.
 
 ## Repository contents
 
-`src/engine` contains the Python save parser, conversion/repair logic and compatibility metadata. `src/gui` contains the English Windows Forms interface and embedded-engine loader. `tests` uses generated synthetic worlds, and `scripts/build.ps1` builds the release.
+`src/engine/*.cs` contains the production .NET save parser, conversion/repair logic, cleanup and safe file operations. The Python files provide the independent reference implementation for tests. `src/gui` contains the English Windows Forms interface. `src/gui/assets` contains the PNG master and the multi-resolution Windows icon, embedded into the EXE and application window. `tests` uses synthetic worlds and a separately compiled native test harness. The test-only process-check override is excluded from the production build. `scripts/build.ps1` builds and verifies the release.
 
 Application code and documentation are under the [MIT license](LICENSE). Runtime component license texts are included in releases and accessible in the EXE. Game names and compatibility identifiers belong to their respective owners. This project is not affiliated with the game developer and distributes no game assemblies, game media, or personal saves.

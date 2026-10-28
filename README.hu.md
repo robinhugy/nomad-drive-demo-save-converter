@@ -15,6 +15,8 @@ Indításkor megkeresi az aktuális Windows-felhasználó mentéseit és a Steam
 
 A már megfelelően átalakított világokat kihagyja. Ha egy régebbi konverter eredményén kell javítani a többjátékos módot, annak legutóbbi állapotából készít új másolatot. A játék saját, eleve új formátumú mentéseit automatikusan nem módosítja.
 
+Az 1.3.0-s kiadás megtartja a lakóautót és floppylemezt ábrázoló ikont. A konvertálást közvetlenül a programba fordított .NET-kód végzi: nincs beágyazott Python-futtatókörnyezet, kicsomagolt belső EXE vagy külön konvertáló folyamat. Folyamatban lévő művelet alatt az ablak bezárása várakozik.
+
 Az EXE önállóan fut, külön Python vagy telepítő nélkül. Windows 10/11 x64 és .NET Framework 4.8 szükséges. Szokatlan telepítési hely esetén a **Browse** gombbal lehet mappát választani. A kiválasztott világ külön előnézete és beállításai is elérhetők.
 
 ## Lebegő régi loot eltakarítása
@@ -45,10 +47,12 @@ A 2026. október 28-i frissítés továbbra is 16-os mentésformátumot használ
 
 ## Kompatibilitás és korlátok
 
+- A korábbi kiadásokra több vírusirtó jelzett, köztük a COMODO a belső motorra. Az 1.3.0 más felépítést használ, nincs benne külön EXE vagy Python-futtatókörnyezet. Ez nem vírusirtói jóváhagyás: az új fájlt külön kell vizsgálni, gyártói eredmény még nincs. Mindig az adott kiadás ellenőrzőösszegéhez tartozó jelentést tedd közzé.
+
 - **5-ös világformátum → 16-os világformátum**, a **26274244** Steam buildhez.
 - A megszűnt tárgyak egy részét hasonló tárggyal helyettesíti, a többit listázva kihagyja.
 - A megváltozott terep és modellek, valamint a több felületből álló kasztni festése miatt lehet szükség kézi ellenőrzésre.
 - A régi küldetések és közös kilométeróra adatai archiválva maradnak, az új rendszerek alaphelyzetből indulnak.
-- A kezdeti játékbeli betöltés és a többjátékos aktiválás működését visszaigazolták; ez nem minden tárgyra kiterjedő teljes teszt.
+- Az 1.3.0 három valódi világ konvertált és takarított másolatán átment a játék saját fájlolvasóján. A kezdeti játékbeli betöltést és a többjátékos aktiválást a korábbi motorral igazolták vissza; az átírt változatnál még szükséges a játékbeli betöltés/mentés/újratöltés ellenőrzése.
 
 A részletes fejlesztői és fordítási leírás az [angol README-ben](README.md) található.

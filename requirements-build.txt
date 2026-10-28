@@ -1,2 +1,2 @@
-PyInstaller==6.22.2
-pyinstaller-hooks-contrib==2026.6
+# No third-party Python packages are required.
+# Python 3.11+ standard-library tools provide tests and source packaging only.

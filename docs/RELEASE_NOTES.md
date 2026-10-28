@@ -1,29 +1,22 @@
-# Nomad Drive Save Converter v1.2.1
+# Nomad Drive Save Converter v1.3.0
 
 Author: **robinhugy**
 
-Standalone Windows x64 release with an English interface.
+The save converter now runs directly as a single .NET Framework Windows application. The Python runtime, PyInstaller package, embedded executable engine, runtime extraction cache and converter subprocess have been removed from the release.
 
-This compatibility update supports Steam build **26274244** (28 October 2026). The world manifest, inspected save-contributor methods, loot identities, paint surface IDs, placement planes and plant phase durations are unchanged from the previously inspected build. The catalog fingerprint is updated after checking the actual game code and assets. Existing format-16 saves do **not** need reconversion for this update. Optional legacy-loot cleanup keeps the same safeguards.
+- Keeps the English interface, motorhome-and-floppy icon and automatic save/game discovery.
+- Keeps backup copies, separate `(converted)` slots, item replacement reports, multiplayer repair and optional old-loot cleanup.
+- Preserves compatibility checks and complete save/manifest read-back verification.
+- Defers closing the window until the active operation finishes.
+- Resolves redirected filesystem paths before checking source/destination boundaries.
+- Builds without third-party Python packages. Python is used only for tests and source packaging, including independent decoded-save comparisons.
 
-- Adds opt-in **Clean old world loot** to remove imported floating leftovers after changed map generation.
-- Protects vehicles and their linked cargo/parts, all players' carried equipment/backpack contents, current-only objects and moved imports.
-- Uses the latest converted progress, an exact original-save fingerprint, backup copies, removal previews and detailed reports.
-- Resets old loot reservations while keeping current-world reservations and live native markers. Repeated cleanup batches skip completed worlds.
-- Cleanup can remove intentional loose ground stashes; it is off by default. Protected/moved floating items may remain.
-- Finds the current user's Nomad Drive Demo saves and the game in Steam libraries.
-- Automatically backs up and converts all supported legacy worlds on launch.
-- Uses the `(converted)` suffix and skips suitable existing conversions on repeated runs.
-- Fixes the player-limit setting that incorrectly marked converted co-op worlds as single-player.
-- Selects enough player slots for the saved players, with a manual override.
-- Repairs older converter output from its latest progress in a separate copy.
-- Includes item replacement/omission reports, checksum/read-back checks and embedded license texts.
-- Builds as one EXE: no separate engine, Python installation or installer required.
+**Antivirus status:** earlier packaged releases received detections. This release removes their embedded executable architecture, but has not received a vendor verdict. A fresh scan must refer to this EXE's exact SHA-256. No claim of confirmed false positives or zero detections is made.
 
-Compatibility: legacy world format **5** to **16**, inspected Steam build **26274244**. Native format-16 worlds are not changed by the automatic batch; they can be selected for manual multiplayer repair.
+Compatibility: legacy format **5** to **16**, inspected Steam build **26274244**. Already converted worlds do not require another conversion for this release. Automatic conversion leaves suitable existing worlds alone; optional cleanup remains off by default.
 
-Save and close the game before starting the tool. Load the newest `(converted)` worlds afterward. Backups are stored under `%LOCALAPPDATA%\NomadDriveSaveConverter\Backups`.
+Save and close the game before converting. Original slots are backed up and never overwritten. Load the newest `(converted)` copy afterward. Backups: `%LOCALAPPDATA%\NomadDriveSaveConverter\Backups`.
 
-Known limitations remain: changed terrain/model geometry, provisional multi-surface paint mapping, omitted unavailable assets, and reset legacy quest/shared-odometer systems. See README for details.
+Known world-generation, multi-surface paint and legacy quest/odometer limitations remain; see README. File checks do not replace an in-game load/save/reload check.
 
-Download the **win-x64 EXE** for the standalone app, or the **win-x64 ZIP** for the app plus documentation and license files. `SHA256SUMS.txt` contains the asset checksums. GitHub's automatic Source code archives contain source rather than the runnable app.
+The **win-x64 EXE** is the standalone application. The **win-x64 ZIP** contains that same EXE plus documentation, license notices and checksums. Source archives contain the complete buildable source. `SHA256SUMS.txt` identifies the release assets.

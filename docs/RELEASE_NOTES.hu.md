@@ -1,29 +1,20 @@
-# Nomad Drive Save Converter v1.2.1
+# Nomad Drive Save Converter v1.3.0
 
 Készítő: **robinhugy**
 
-Önállóan futtatható Windows x64 kiadás, **angol kezelőfelülettel**.
+A konverter most közvetlenül egyetlen .NET Framework EXE-ként fut. A kiadásból kikerült a Python-futtatókörnyezet, a PyInstaller-csomag, a beágyazott motor, annak kicsomagolása és a külön konvertáló folyamat.
 
-Ez a kompatibilitási frissítés a 2026. október 28-i **26274244** Steam-buildet támogatja. A világ mentésformátuma, az ellenőrzött tárgyállapot-mentők, tárgyazonosítók, festési felületek, lerakási síkok és növényfázisok nem változtak. Az új játékfájlok és tárgymodellek ellenőrzése után frissült a kompatibilitási azonosító. A már 16-os formátumú mentéseket emiatt **nem kell újrakonvertálni**. A választható régi-loot takarítás változatlan védelemmel elérhető.
+- Megmarad az angol felület, a lakóautós-floppys ikon és az automatikus keresés.
+- Megmarad a backup, a külön `(converted)` mentés, a tárgycserék listája, a többjátékos javítás és a külön kapcsolható régi-loot-takarítás.
+- A program visszaolvassa és ellenőrzi a teljes elkészített mentést.
+- Aktív művelet közben az ablak bezárása megvárja a befejezést.
+- A meghajtó-átirányításokat feloldja a forrás és cél biztonsági ellenőrzése előtt.
+- A fordításhoz nincs külső Python-csomag; Python csak a teszteléshez és a forráscsomag elkészítéséhez kell.
 
-- Új, külön bekapcsolható **Clean old world loot**: a megváltozott pályagenerálás miatt lebegő régi loot maradványainak takarítása.
-- Megőrzi az autókat, kapcsolt alkatrészeiket/rakományukat, minden játékos felszerelését és hátizsáktartalmát, az új tárgyakat és az elmozdult régi tárgyakat.
-- A legutóbbi konvertált állapotból dolgozik, az eredeti mentést ellenőrzőösszeggel azonosítja. Előnézet, törlési lista és biztonsági másolat készül.
-- A régi loot foglalásait felszabadítja, az újakat megtartja. Ismételt futáskor nem takarítja újra a kész példányokat.
-- A takarítás szándékos földi készleteket is törölhet, ezért alapból ki van kapcsolva. Védett vagy már elmozdult tárgyak maradhatnak lebegve.
-- Automatikusan megkeresi a mentéseket és a játék Steam-telepítését.
-- Indításkor biztonsági másolatot készít, majd átalakítja az összes támogatott régi világot.
-- Az új nevek végére `(converted)` kerül; ismételt futáskor a megfelelő példányokat kihagyja.
-- Javítja azt a játékoslétszám-beállítást, amely miatt a többjátékos világok egyjátékosnak látszottak.
-- Figyelembe veszi a mentett résztvevőket, és külön is választható játékoslétszám.
-- A korábban konvertált mentések legutóbbi állapotából is készíthet javított másolatot.
-- Listázza a tárgyhelyettesítéseket és kihagyásokat, ellenőrzi az új fájlt.
-- Egyetlen EXE: külön Python, motorfájl vagy telepítő nem szükséges.
+**Vírusirtói állapot:** a korábbi kiadásokra volt jelzés. Az új felépítés megszünteti a korábbi beágyazott motort, de gyártói jóváhagyás még nincs. Az új EXE-hez új, a pontos SHA-256-hoz tartozó vizsgálat kell. Ez nem állítás arról, hogy minden korábbi jelzés téves, vagy az új fájlra egyetlen motor sem fog jelezni.
 
-**Kompatibilitás:** 5-ös világformátum → 16-os világformátum, **26274244** Steam build. Az automatikus futás a játék saját, eleve 16-os formátumú mentéseit nem változtatja meg.
+Kompatibilitás: **5 → 16** világformátum, **26274244** Steam build. A már átalakított mentéseket emiatt nem kell ismét konvertálni. A régi-loot-takarítás alapból kikapcsolt marad.
 
-Használat előtt ments és zárd be a játékot. Utána a legújabb `(converted)` világokat töltsd be. A biztonsági másolatok helye: `%LOCALAPPDATA%\NomadDriveSaveConverter\Backups`.
+Konvertálás előtt ments és zárd be a játékot. A program backupot és külön új mentést készít. Biztonsági másolatok: `%LOCALAPPDATA%\NomadDriveSaveConverter\Backups`.
 
-A terep és a modellek változása, valamint a több felületből álló kasztni festése miatt továbbra is kell játékbeli ellenőrzés. A régi küldetések és közös kilométeróra az új rendszerben alaphelyzetből indulnak. Részletek a README-ben.
-
-Futtatható program: **win-x64 EXE**. Program dokumentációval és licencekkel: **win-x64 ZIP**. Ellenőrzőösszegek: `SHA256SUMS.txt`. A GitHub automatikus **Source code** csomagjai a forrást tartalmazzák.
+A pályagenerálás, a többfelületű festés és a régi küldetés/kilométeróra korlátai megmaradnak; részletek a README-ben. Az elkészített másolatot játékban is ellenőrizni kell.
