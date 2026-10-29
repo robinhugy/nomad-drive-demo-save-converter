@@ -1,6 +1,4 @@
-# Nomad Drive Save Converter
-
-Author: **robinhugy**
+# Nomad Drive Demo - Save Converter
 
 An unofficial Windows tool that converts legacy **Nomad Drive Demo** worlds to the updated save format and fixes the saved player limit that can block multiplayer.
 
