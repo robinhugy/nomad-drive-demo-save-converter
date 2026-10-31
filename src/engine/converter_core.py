@@ -23,7 +23,7 @@ import zlib
 from collections import Counter
 from datetime import datetime, timezone
 
-VERSION = '1.3.0'
+VERSION = '2.0.0'
 MAX_DATA = 512 * 1024 * 1024
 MAX_COUNT = 100_000
 DEFAULT_SAVES = Path.home() / 'AppData/LocalLow/Indie Devil/Nomad Drive Demo/EvilSave'

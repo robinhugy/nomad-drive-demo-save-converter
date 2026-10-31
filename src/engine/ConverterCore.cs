@@ -11,17 +11,22 @@ namespace NomadSave
     internal sealed class Mapping
     {
         internal Dictionary<string, object> Raw, Assets, Replacements, OldNames, PlantPhases;
-        internal string Build, CatalogSha256;
+        internal string Build, CatalogSha256, GameDataDirectory, Edition;
         internal ulong Economy;
         internal static Mapping Load()
         {
             using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("NomadDriveSaveConverter.Mapping"))
             using (var reader = new StreamReader(stream, Encoding.UTF8)) return FromJson(reader.ReadToEnd());
         }
+        internal static Mapping LoadEarlyAccess()
+        {
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("NomadDriveSaveConverter.EarlyAccessMapping"))
+            using (var reader = new StreamReader(stream, Encoding.UTF8)) return FromJson(reader.ReadToEnd());
+        }
         internal static Mapping FromJson(string text)
         {
             var d = Json.Read(text);
-            return new Mapping { Raw = d, Build = Json.S(d, "build"), CatalogSha256 = Json.S(d, "catalogSha256"), Economy = Convert.ToUInt64(d["economyPacked"]), Assets = Json.Dict(d["assets"]), Replacements = Json.Dict(d["replacements"]), OldNames = Json.Dict(d["oldNames"]), PlantPhases = Json.Dict(d["plantPhases"]) };
+            return new Mapping { Raw = d, GameDataDirectory = Json.S(d, "gameDataDirectory", "Nomad Drive Demo_Data"), Edition = Json.S(d, "edition", "Demo"), Build = Json.S(d, "build"), CatalogSha256 = Json.S(d, "catalogSha256"), Economy = Convert.ToUInt64(d["economyPacked"]), Assets = Json.Dict(d["assets"]), Replacements = Json.Dict(d["replacements"]), OldNames = Json.Dict(d["oldNames"]), PlantPhases = Json.Dict(d["plantPhases"]) };
         }
         internal Dictionary<string, object> Asset(string guid) { return Json.Dict(Assets[guid]); }
         internal string Name(string guid) { return Assets.ContainsKey(guid) ? Json.S(Asset(guid), "name") : Json.S(OldNames, guid, guid); }
@@ -137,7 +142,7 @@ namespace NomadSave
             }
             r.End(); var w = new DataWriter(); w.B(1); w.I(rows.Count); foreach (var row in rows) { w.U(row.Item1); foreach (bool flag in row.Item2) w.Bool(flag); } return w.Finish();
         }
-        static Dictionary<string, object> BaseReport(byte[] data, Manifest m, Mapping mapping)
+        internal static Dictionary<string, object> BaseReport(byte[] data, Manifest m, Mapping mapping)
         {
             return Json.D("converterVersion", BuildInfo.Version, "targetBuild", mapping.Build, "sourceSha256", SaveFormat.Sha(data), "sourceFormat", m.Format, "targetFormat", 16,
                 "sourceObjects", m.Objects.Count, "replacements", new List<object>(), "omitted", new List<object>(), "counters", Json.D(), "unmappedPaintSurfaces", new List<object>(), "paintHashes", Json.D(), "warnings", new List<object>(), "paintHierarchyNeedsVisualCheck", false);
@@ -249,7 +254,7 @@ namespace NomadSave
         internal static string ReportText(Dictionary<string, object> r)
         {
             var replacements = Json.Items(r["replacements"]).Select(Json.Dict).ToList(); var omitted = Json.Items(r["omitted"]).Select(Json.Dict).ToList();
-            var lines = new List<string> { "Nomad Drive Save Converter " + BuildInfo.Version, "", "World: " + Json.S(r, "displayName"), "Format: " + r["sourceFormat"] + " -> " + r["targetFormat"] + "; Steam build " + r["targetBuild"], "Objects: " + r["sourceObjects"] + " -> " + r["outputObjects"], "Vehicles: " + r["vehicles"], "Player slots: " + Json.S(r, "playerSlots", "unknown"), "Replaced: " + replacements.Count + "; omitted: " + omitted.Count, "Paint images transferred: " + Json.Dict(r["paintHashes"]).Count, "New slot: " + Json.S(r, "destination"), "Backup: " + Json.S(r, "backup"), "", "REPLACEMENTS" };
+            var lines = new List<string> { "Nomad Drive Save Converter " + BuildInfo.Version, "", "World: " + Json.S(r, "displayName"), "Action: " + Json.S(r, "operation"), "Format: " + r["sourceFormat"] + " -> " + r["targetFormat"] + "; target " + r["targetBuild"], "Objects: " + r["sourceObjects"] + " -> " + r["outputObjects"], "Vehicles: " + r["vehicles"], "Player slots: " + (r.ContainsKey("previousPlayerSlots") ? Json.S(r, "previousPlayerSlots") + " -> " : "") + Json.S(r, "playerSlots", "unknown"), "Replaced: " + replacements.Count + "; omitted: " + omitted.Count, "Paint images transferred: " + Json.Dict(r["paintHashes"]).Count, "New slot: " + Json.S(r, "destination"), "Backup: " + Json.S(r, "backup"), "", "REPLACEMENTS" };
             var groups = replacements.GroupBy(x => Tuple.Create(Json.S(x, "old"), Json.S(x, "new"))).OrderBy(g => g.Key.Item1, StringComparer.Ordinal).ThenBy(g => g.Key.Item2, StringComparer.Ordinal).ToList();
             if (groups.Count == 0) lines.Add("None."); foreach (var g in groups) lines.Add(g.Count() + " x " + g.Key.Item1 + " -> " + g.Key.Item2);
             lines.Add(""); lines.Add("OMITTED OBJECTS"); var omitGroups = omitted.GroupBy(x => Json.S(x, "name")).OrderBy(g => g.Key, StringComparer.Ordinal).ToList();

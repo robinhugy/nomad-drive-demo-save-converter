@@ -8,12 +8,12 @@ namespace NomadSave
 {
     internal static class ConverterEngine
     {
-        static readonly HashSet<string> Modes = new HashSet<string>(new[] { "--list", "--inspect", "--preview", "--convert", "--repair-multiplayer", "--batch" }, StringComparer.Ordinal);
+        static readonly HashSet<string> Modes = new HashSet<string>(new[] { "--list", "--inspect", "--preview", "--convert", "--repair-multiplayer", "--batch", "--preview-plan", "--apply-plan" }, StringComparer.Ordinal);
         internal static Dictionary<string, object> Run(string[] args)
         {
             var options = new Dictionary<string, string>(StringComparer.Ordinal); string mode = null;
             var flags = new HashSet<string>(new[] { "--omit-missing", "--clean-legacy-loot" }, StringComparer.Ordinal);
-            var values = new HashSet<string>(new[] { "--source", "--output-root", "--backup-root", "--game", "--players", "--legacy-source", "--name", "--report" }, StringComparer.Ordinal);
+            var values = new HashSet<string>(new[] { "--source", "--output-root", "--backup-root", "--game", "--players", "--legacy-source", "--name", "--report", "--plan" }, StringComparer.Ordinal);
             for (int i = 0; i < args.Length; i++)
             {
                 string arg = args[i];
@@ -28,6 +28,11 @@ namespace NomadSave
             int? players = null; int parsed;
             if (options.ContainsKey("--players")) { if (!int.TryParse(options["--players"], out parsed) || parsed < 1 || parsed > 8) throw new ConversionError("Player slots must be an integer from 1 to 8."); players = parsed; }
             bool replace = !options.ContainsKey("--omit-missing"), cleanup = options.ContainsKey("--clean-legacy-loot");
+            if (mode == "--preview-plan" || mode == "--apply-plan")
+            {
+                string planFile = opt("--plan", null); if (planFile == null) throw new ConversionError("Provide --plan FILE.json.");
+                return SelectedOperations.Execute(Json.Read(File.ReadAllText(planFile, Encoding.UTF8)), mode == "--apply-plan");
+            }
             if (mode == "--list")
             {
                 if (!Directory.Exists(root)) throw new ConversionError("The save folder does not exist."); var rows = new List<Dictionary<string, object>>();

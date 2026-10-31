@@ -22,6 +22,7 @@ internal static class NativeHarness
             Conversion conversion = null; object result;
             switch (Json.S(r, "mode"))
             {
+                case "plan": result = SelectedOperations.Execute(Json.Dict(r["plan"]), Convert.ToBoolean(Json.Get(r, "apply", false)), mapping); break;
                 case "transform": conversion = ConverterCore.Transform(Bytes(r, "data"), mapping, Convert.ToBoolean(Json.Get(r, "replace_missing", true)), Players(r)); result = null; break;
                 case "repair": conversion = ConverterCore.Repair(Bytes(r, "data"), mapping, Players(r)); result = null; break;
                 case "clean": conversion = LootCleanup.Clean(Bytes(r, "data"), Bytes(r, "legacy"), mapping); result = null; break;

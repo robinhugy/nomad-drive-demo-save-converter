@@ -1,0 +1,6537 @@
+{
+  "build": "Early Access 1.0",
+  "formatFrom": 5,
+  "formatTo": 16,
+  "catalogSha256": "5233ae1c25e7e5f5b9d68514bcfe6e3bd56bc5bd6e2251724ef8acf291cdcd1b",
+  "economyPacked": 100315474052776193,
+  "assets": {
+    "4e822bc001d548046af03248ac4e91b7": {
+      "guid": "4e822bc001d548046af03248ac4e91b7",
+      "name": "SolarPanel",
+      "path": "Assets/_Project/Art/Models/Props/Prefabs/SolarPanel.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "04dacfd7a172ca2468365d128fe6f0c0": {
+      "guid": "04dacfd7a172ca2468365d128fe6f0c0",
+      "name": "Backpack-1",
+      "path": "Assets/_Project/Features/Backpacks/Backpack-1.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "fc237c7dc8590e844aab397171e46574": {
+      "guid": "fc237c7dc8590e844aab397171e46574",
+      "name": "Backpack-2",
+      "path": "Assets/_Project/Features/Backpacks/Backpack-2.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "7ac7919496511334e8a8246200b0083e": {
+      "guid": "7ac7919496511334e8a8246200b0083e",
+      "name": "ConsumableBattery",
+      "path": "Assets/_Project/Features/Battery/ConsumableBattery.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/ConsumableBattery/SnappingPlane",
+          "planeId": 3137098693,
+          "position": [
+            -0.000202178955078125,
+            0.09040000289678574,
+            0.00025177001953125
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "61aa1f9272cc07a50bb4ad2941f8ec2b": {
+      "guid": "61aa1f9272cc07a50bb4ad2941f8ec2b",
+      "name": "CoffeeMachine",
+      "path": "Assets/_Project/Features/CoffeeBrewing/Prefabs/CoffeeMachine.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/CoffeeMachine/Model/CoffeePotSnappingPlane",
+          "planeId": 2276478346,
+          "position": [
+            0.011500001567478595,
+            0.049000005302083934,
+            0.04720000811795668
+          ],
+          "rotation": [
+            0.0,
+            1.0000001343588565,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "750cb536255da369581abc906f7655ca": {
+      "guid": "750cb536255da369581abc906f7655ca",
+      "name": "CoffeePack",
+      "path": "Assets/_Project/Features/CoffeeBrewing/Prefabs/CoffeePack.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "eb3e12f62a5eeb848b8223cdcdae1210": {
+      "guid": "eb3e12f62a5eeb848b8223cdcdae1210",
+      "name": "CoffeePot",
+      "path": "Assets/_Project/Features/CoffeeBrewing/Prefabs/CoffeePot.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "6dbd7abba4927086198613fc11ce4306": {
+      "guid": "6dbd7abba4927086198613fc11ce4306",
+      "name": "Mug",
+      "path": "Assets/_Project/Features/CoffeeBrewing/Prefabs/Mug.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "c8d8431dab876c045b215466c5f044a3": {
+      "guid": "c8d8431dab876c045b215466c5f044a3",
+      "name": "Compass",
+      "path": "Assets/_Project/Features/Compass/Compass.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "2ebe0d040ec567047a5c5ceb0e1e0951": {
+      "guid": "2ebe0d040ec567047a5c5ceb0e1e0951",
+      "name": "Apple",
+      "path": "Assets/_Project/Features/Consumables/Apple.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "78807336d37d04644ace85a375eed690": {
+      "guid": "78807336d37d04644ace85a375eed690",
+      "name": "BakedBeans",
+      "path": "Assets/_Project/Features/Consumables/BakedBeans.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/BakedBeans/SnappingPlane",
+          "planeId": 3352948911,
+          "position": [
+            -0.0001659393310546875,
+            0.0885000005364418,
+            -0.0001049041748046875
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "2cc16e38200cf074484da5c5bc14b622": {
+      "guid": "2cc16e38200cf074484da5c5bc14b622",
+      "name": "Banana",
+      "path": "Assets/_Project/Features/Consumables/Banana.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "abd2445bd987afa4c98bb1ad7dc93a83": {
+      "guid": "abd2445bd987afa4c98bb1ad7dc93a83",
+      "name": "Beer",
+      "path": "Assets/_Project/Features/Consumables/Beer.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "6c9134bf1588eab4e911424a96c9a0e1": {
+      "guid": "6c9134bf1588eab4e911424a96c9a0e1",
+      "name": "Cereal",
+      "path": "Assets/_Project/Features/Consumables/Cereal.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cereal/Cereal Model/SnappingPlane",
+          "planeId": 964694971,
+          "position": [
+            0.0,
+            0.20499999821186066,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "99e40d642799bd84999d371843a8e9cb": {
+      "guid": "99e40d642799bd84999d371843a8e9cb",
+      "name": "Chips-01",
+      "path": "Assets/_Project/Features/Consumables/Chips-01.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "e96c78dcf92e6dc4b9e16be0fa0b30a0": {
+      "guid": "e96c78dcf92e6dc4b9e16be0fa0b30a0",
+      "name": "ChocolateBar-01",
+      "path": "Assets/_Project/Features/Consumables/ChocolateBar-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/ChocolateBar-01/SnapSurface_Top",
+          "planeId": 3978364465,
+          "position": [
+            0.0,
+            0.01504428219050169,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "488f253c6111b00418d1f38f5f1992e5": {
+      "guid": "488f253c6111b00418d1f38f5f1992e5",
+      "name": "ChocolateBar-02",
+      "path": "Assets/_Project/Features/Consumables/ChocolateBar-02.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/ChocolateBar-02/SnapSurface_Top",
+          "planeId": 790992103,
+          "position": [
+            0.0,
+            0.010813070461153984,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "3920c5c9c08bf0f40a69241f7a3e82f2": {
+      "guid": "3920c5c9c08bf0f40a69241f7a3e82f2",
+      "name": "ChocolateBar-03",
+      "path": "Assets/_Project/Features/Consumables/ChocolateBar-03.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/ChocolateBar-03/SnapSurface_Top",
+          "planeId": 2506775367,
+          "position": [
+            0.0,
+            0.011429548263549805,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "22e299aca28005b4e82ccde4fa0bb34a": {
+      "guid": "22e299aca28005b4e82ccde4fa0bb34a",
+      "name": "Coolant",
+      "path": "Assets/_Project/Features/Consumables/Coolant.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "bcc1c70183a3cd449b74498a30871b31": {
+      "guid": "bcc1c70183a3cd449b74498a30871b31",
+      "name": "FirstAidKit",
+      "path": "Assets/_Project/Features/Consumables/Medicines/FirstAidKit/FirstAidKit.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/FirstAidKit/SnapSurface_Top",
+          "planeId": 1170120514,
+          "position": [
+            -0.0006862431764602661,
+            0.11650881171226501,
+            0.0002287253737449646
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "2f5034b7d86ff8547bdc272c7bc148bf": {
+      "guid": "2f5034b7d86ff8547bdc272c7bc148bf",
+      "name": "Pills",
+      "path": "Assets/_Project/Features/Consumables/Medicines/Pills/Pills.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Pills/SnapSurface_Top",
+          "planeId": 3014338182,
+          "position": [
+            0.0,
+            0.13944613933563232,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "30ae6cdd6eb25cd40aa8a5fed211020d": {
+      "guid": "30ae6cdd6eb25cd40aa8a5fed211020d",
+      "name": "Reviver",
+      "path": "Assets/_Project/Features/Consumables/Medicines/Reviver.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Reviver/SnapSurface_Top",
+          "planeId": 1767732932,
+          "position": [
+            0.0,
+            0.31457239389419556,
+            0.006566978991031647
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "0b76040d2d5150340a9ae2f17f64a039": {
+      "guid": "0b76040d2d5150340a9ae2f17f64a039",
+      "name": "Mushroom",
+      "path": "Assets/_Project/Features/Consumables/Mushroom.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "435fb7fae786c4a43b1481537bed2f96": {
+      "guid": "435fb7fae786c4a43b1481537bed2f96",
+      "name": "Orange",
+      "path": "Assets/_Project/Features/Consumables/Orange.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "0e1b4b4dc2c60ec439bde809469d3aec": {
+      "guid": "0e1b4b4dc2c60ec439bde809469d3aec",
+      "name": "PeanutButter",
+      "path": "Assets/_Project/Features/Consumables/PeanutButter.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/PeanutButter/SnappingPlane",
+          "planeId": 4208191708,
+          "position": [
+            0.0,
+            0.15479999780654907,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "96829d69a436fad44aee5e65c925ffba": {
+      "guid": "96829d69a436fad44aee5e65c925ffba",
+      "name": "Potato",
+      "path": "Assets/_Project/Features/Consumables/Potato.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "b04ba2d2bb1f42041b6766ca403b1e91": {
+      "guid": "b04ba2d2bb1f42041b6766ca403b1e91",
+      "name": "Soda",
+      "path": "Assets/_Project/Features/Consumables/Soda.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Soda/SnappingPlane",
+          "planeId": 4280064781,
+          "position": [
+            0.0,
+            0.1274999976158142,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "d8e9b56962c667b4b846957a3a5ecc04": {
+      "guid": "d8e9b56962c667b4b846957a3a5ecc04",
+      "name": "Tomato",
+      "path": "Assets/_Project/Features/Consumables/Tomato.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "d7b4345900ae2de41bd8f8cf11aedb8a": {
+      "guid": "d7b4345900ae2de41bd8f8cf11aedb8a",
+      "name": "TomatoSoup",
+      "path": "Assets/_Project/Features/Consumables/TomatoSoup.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/TomatoSoup/SnappingPlane",
+          "planeId": 4280064781,
+          "position": [
+            -0.0001773834228515625,
+            0.05460000038146973,
+            0.0001010894775390625
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "b6f2197bbc459584a824907a13d11865": {
+      "guid": "b6f2197bbc459584a824907a13d11865",
+      "name": "TunaCan",
+      "path": "Assets/_Project/Features/Consumables/TunaCan.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/TunaCan/SnappingPlane",
+          "planeId": 4192911480,
+          "position": [
+            -0.00011539459228515625,
+            0.02710000053048134,
+            -3.910064697265625e-05
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "b152f1a0545d19c46af9b7800c223878": {
+      "guid": "b152f1a0545d19c46af9b7800c223878",
+      "name": "Watermelon",
+      "path": "Assets/_Project/Features/Consumables/Watermelon.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "27294ab550ae24b40b18bf62877c9bae": {
+      "guid": "27294ab550ae24b40b18bf62877c9bae",
+      "name": "Drumstick",
+      "path": "Assets/_Project/Features/Cooking/Drumstick/Drumstick.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": true
+    },
+    "0cc2e509daeeb6545b91aa655e4a04dd": {
+      "guid": "0cc2e509daeeb6545b91aa655e4a04dd",
+      "name": "CookingPot-01",
+      "path": "Assets/_Project/Features/Cooking/Pan/CookingPot-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/CookingPot-01/SnappingPlane (1)",
+          "planeId": 1993791660,
+          "position": [
+            0.0,
+            -0.019999999552965164,
+            0.0
+          ],
+          "rotation": [
+            3.879267751472071e-06,
+            -4.188070517555792e-13,
+            -1.0796033933502258e-07,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "76c54e086bfa15b46bdfc31e9b4642bc": {
+      "guid": "76c54e086bfa15b46bdfc31e9b4642bc",
+      "name": "Pan",
+      "path": "Assets/_Project/Features/Cooking/Pan/Pan.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Pan/SnappingPlane",
+          "planeId": 1609386635,
+          "position": [
+            -0.004100000020116568,
+            -0.012199999764561653,
+            -0.016499996185302734
+          ],
+          "rotation": [
+            3.879267751472071e-06,
+            -4.188070517555792e-13,
+            -1.0796033933502258e-07,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "20b264eebb34a2547a716c2e4bacda71": {
+      "guid": "20b264eebb34a2547a716c2e4bacda71",
+      "name": "Steak",
+      "path": "Assets/_Project/Features/Cooking/Steak/Steak.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": true
+    },
+    "32a1a213c04f44b21ae164af8a13f646": {
+      "guid": "32a1a213c04f44b21ae164af8a13f646",
+      "name": "Stove01",
+      "path": "Assets/_Project/Features/Cooking/Stoves/Stove01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Stove01/ElectricalCookingPotSlot",
+          "planeId": 2473014227,
+          "position": [
+            0.0,
+            0.10170000046491623,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "0c1847877d9ca4a14bda2851ccc24a57": {
+      "guid": "0c1847877d9ca4a14bda2851ccc24a57",
+      "name": "Stove02",
+      "path": "Assets/_Project/Features/Cooking/Stoves/Stove02.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Stove02/CookingPotSlots/CookingPotSlot_Left",
+          "planeId": 2366567816,
+          "position": [
+            0.1954000258722508,
+            0.1204000128151039,
+            0.03540000422582211
+          ],
+          "rotation": [
+            -7.850462352884378e-18,
+            0.7071068286895752,
+            7.850462352884378e-18,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Stove02/CookingPotSlots/CookingPotSlot_Right",
+          "planeId": 4282606889,
+          "position": [
+            -0.1970000233692528,
+            0.1204000128151039,
+            -0.06710001237718169
+          ],
+          "rotation": [
+            -7.850462352884378e-18,
+            0.7071068286895752,
+            7.850462352884378e-18,
+            0.7071068286895752
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "959c008b1491c4f50a86fe2e308b9a83": {
+      "guid": "959c008b1491c4f50a86fe2e308b9a83",
+      "name": "Stove03",
+      "path": "Assets/_Project/Features/Cooking/Stoves/Stove03.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Stove03/CookingPotSlots/ElectricalCookingPotSlot",
+          "planeId": 943526178,
+          "position": [
+            -0.17800000309944153,
+            0.03180000185966492,
+            -0.13850000500679016
+          ],
+          "rotation": [
+            0.0,
+            -1.0,
+            -1.1102230411687688e-17,
+            0.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Stove03/CookingPotSlots/ElectricalCookingPotSlot_1",
+          "planeId": 1843246253,
+          "position": [
+            0.17720000445842743,
+            0.03180000185966492,
+            -0.13850000500679016
+          ],
+          "rotation": [
+            0.0,
+            -1.0,
+            -1.1102230411687688e-17,
+            0.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Stove03/CookingPotSlots/ElectricalCookingPotSlot_2",
+          "planeId": 4207787403,
+          "position": [
+            0.17560000717639923,
+            0.03180000185966492,
+            0.21410000324249268
+          ],
+          "rotation": [
+            0.0,
+            -1.0,
+            -1.1102230411687688e-17,
+            0.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Stove03/CookingPotSlots/ElectricalCookingPotSlot_3",
+          "planeId": 4164199913,
+          "position": [
+            -0.1753000020980835,
+            0.03180000185966492,
+            0.21410000324249268
+          ],
+          "rotation": [
+            0.0,
+            -1.0,
+            -1.1102230411687688e-17,
+            0.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "35454f86729404e30965a6a9bea1a043": {
+      "guid": "35454f86729404e30965a6a9bea1a043",
+      "name": "Crowbar",
+      "path": "Assets/_Project/Features/Crowbar/Crowbar.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "408176b03369b4341a69731f3aa7947f": {
+      "guid": "408176b03369b4341a69731f3aa7947f",
+      "name": "Bookshelf-01",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Bookshelf-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-01/Model/SnappingPlanes/SnappingPlane",
+          "planeId": 211750876,
+          "position": [
+            0.0,
+            0.8899000287055969,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-01/Model/SnappingPlanes/SnappingPlane",
+          "planeId": 1606146851,
+          "position": [
+            0.0,
+            0.5550000071525574,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-01/Model/SnappingPlanes/SnappingPlane",
+          "planeId": 2513379629,
+          "position": [
+            0.0,
+            0.22200000286102295,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-01/Model/SnappingPlanes/SnappingPlane",
+          "planeId": 2836808846,
+          "position": [
+            0.0,
+            1.2242000102996826,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "d77a4a7e579483d43bbba7d160040b06": {
+      "guid": "d77a4a7e579483d43bbba7d160040b06",
+      "name": "Bookshelf-02",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Bookshelf-02.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-02/Model/SnappingPlanes/SnappingPlane (1)",
+          "planeId": 1906525679,
+          "position": [
+            0.1485000103712082,
+            1.3898999691009521,
+            -0.1418047696352005
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-02/Model/SnappingPlanes/SnappingPlane (2)",
+          "planeId": 700294369,
+          "position": [
+            -0.14196695387363434,
+            1.3898999691009521,
+            -0.01715293526649475
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-02/Model/SnappingPlanes/SnappingPlane (4)",
+          "planeId": 3948885311,
+          "position": [
+            0.1485000103712082,
+            0.490200012922287,
+            -0.1418047696352005
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-02/Model/SnappingPlanes/SnappingPlane (6)",
+          "planeId": 764858868,
+          "position": [
+            -0.14196695387363434,
+            0.490200012922287,
+            -0.01715293526649475
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-02/Model/SnappingPlanes/SnappingPlane (7)",
+          "planeId": 4176061704,
+          "position": [
+            0.13155628740787506,
+            0.9408000111579895,
+            -0.15600000321865082
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-02/Model/SnappingPlanes/SnappingPlane (9)",
+          "planeId": 327687512,
+          "position": [
+            -0.1420954018831253,
+            0.9408000111579895,
+            0.014384061098098755
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-02/Model/SnappingPlanes/SnappingPlane (10)",
+          "planeId": 2585162936,
+          "position": [
+            0.13155628740787506,
+            0.04039999842643738,
+            -0.15600000321865082
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-02/Model/SnappingPlanes/SnappingPlane (12)",
+          "planeId": 2542716392,
+          "position": [
+            -0.1420954018831253,
+            0.040400005877017975,
+            0.014384061098098755
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "66f417f0c2232df459c4f179079ef949": {
+      "guid": "66f417f0c2232df459c4f179079ef949",
+      "name": "Bookshelf-03",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Bookshelf-03.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-03/Model/SnappingPlanes/SnappingPlane",
+          "planeId": 2529620060,
+          "position": [
+            -0.21850000321865082,
+            0.5976999998092651,
+            -0.008999999612569809
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-03/Model/SnappingPlanes/SnappingPlane",
+          "planeId": 2352374077,
+          "position": [
+            -0.21850000321865082,
+            1.0470000505447388,
+            -0.008999999612569809
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-03/Model/SnappingPlanes/SnappingPlane",
+          "planeId": 756836502,
+          "position": [
+            -0.21879999339580536,
+            0.19499999284744263,
+            -0.0034000000450760126
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-03/Model/SnappingPlanes/SnappingPlane",
+          "planeId": 4117180319,
+          "position": [
+            0.1973000019788742,
+            0.19359999895095825,
+            -0.0012000000569969416
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-03/Model/SnappingPlanes/SnappingPlane",
+          "planeId": 345000082,
+          "position": [
+            0.1973000019788742,
+            0.47780001163482666,
+            -0.0012000000569969416
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-03/Model/SnappingPlanes/SnappingPlane",
+          "planeId": 890363996,
+          "position": [
+            0.1973000019788742,
+            0.8080000281333923,
+            -0.0012000000569969416
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-03/Model/SnappingPlanes/SnappingPlane",
+          "planeId": 3457805517,
+          "position": [
+            0.1973000019788742,
+            1.1390999555587769,
+            -0.0012000000569969416
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-03/Model/SnappingPlanes/SnappingPlane",
+          "planeId": 2051686458,
+          "position": [
+            -0.017500000074505806,
+            1.398800015449524,
+            -0.0012000000569969416
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "5a84739115b337a45b10685313dc904b": {
+      "guid": "5a84739115b337a45b10685313dc904b",
+      "name": "Bookshelf-04",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Bookshelf-04.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-04/Model/Snapping Planes/SnappingPlane",
+          "planeId": 2109176811,
+          "position": [
+            0.008999999612569809,
+            0.6840999722480774,
+            0.009100000374019146
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-04/Model/Snapping Planes/SnappingPlane",
+          "planeId": 2999129918,
+          "position": [
+            0.008999999612569809,
+            0.3869999945163727,
+            0.009100000374019146
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-04/Model/Snapping Planes/SnappingPlane",
+          "planeId": 1913493368,
+          "position": [
+            0.008999999612569809,
+            0.08950000256299973,
+            0.009100000374019146
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-04/Model/Snapping Planes/SnappingPlane",
+          "planeId": 3478763799,
+          "position": [
+            0.008999999612569809,
+            0.9810000061988831,
+            0.009100000374019146
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-04/Model/Snapping Planes/SnappingPlane",
+          "planeId": 2067715785,
+          "position": [
+            0.008999999612569809,
+            1.2777999639511108,
+            0.009100000374019146
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Bookshelf-04/Model/Snapping Planes/SnappingPlane",
+          "planeId": 3390334849,
+          "position": [
+            0.008999999612569809,
+            1.5750999450683594,
+            0.009100000374019146
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "eb681252bbb040a4793765c4076ca823": {
+      "guid": "eb681252bbb040a4793765c4076ca823",
+      "name": "Cabinet-01",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Cabinet-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cabinet-01/Body/CabinetRSnappingPlane",
+          "planeId": 851210237,
+          "position": [
+            -0.08860969543457031,
+            0.1720000058412552,
+            -0.1979999989271164
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Cabinet-01/Body/CabinetLSnappingPlane (1)",
+          "planeId": 512701743,
+          "position": [
+            -0.08860969543457031,
+            0.1720000058412552,
+            0.20100000500679016
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Cabinet-01/Body/SnappingPlane_Top",
+          "planeId": 1834799548,
+          "position": [
+            -0.0022525787353515625,
+            0.910968542098999,
+            -0.0015753512270748615
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "a7537055451f9ae49a8920522cbc32bd": {
+      "guid": "a7537055451f9ae49a8920522cbc32bd",
+      "name": "Seat02",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Chair-01.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "5c23aa1ee79bab945afd020399d8458d": {
+      "guid": "5c23aa1ee79bab945afd020399d8458d",
+      "name": "Chair",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Chair-02.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "cbb9a255f862e7f49bf4e8ea1edd2bea": {
+      "guid": "cbb9a255f862e7f49bf4e8ea1edd2bea",
+      "name": "DinnerSeat-04",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Chair-03.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "d2b8833d702b927489e739d3e4c25808": {
+      "guid": "d2b8833d702b927489e739d3e4c25808",
+      "name": "DinnerSeat-02",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Chair-04.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "94fff896ec26b1742b3a0efc580c41cb": {
+      "guid": "94fff896ec26b1742b3a0efc580c41cb",
+      "name": "Chair-05",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Chair-05.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "dd1a5e58e97f3b74eb129d3e4835b7b0": {
+      "guid": "dd1a5e58e97f3b74eb129d3e4835b7b0",
+      "name": "Chair-Folding",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Chair-Folding.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "fc05e3cc58e097c49adca101d466ac75": {
+      "guid": "fc05e3cc58e097c49adca101d466ac75",
+      "name": "Chair-Folding-Color-01",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Chair-Folding-Color-01.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "4062f5f8cada09c489bf3f79bbbfebdc": {
+      "guid": "4062f5f8cada09c489bf3f79bbbfebdc",
+      "name": "Chair-Folding-Color-02",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Chair-Folding-Color-02.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "9db40690e20c18944bbf5c3c04782902": {
+      "guid": "9db40690e20c18944bbf5c3c04782902",
+      "name": "Chair-Folding-Color-03",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Chair-Folding-Color-03.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "c4f43a1a374ab3c45885c59d19c0b737": {
+      "guid": "c4f43a1a374ab3c45885c59d19c0b737",
+      "name": "Chair-Folding-Color-04",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Chair-Folding-Color-04.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "fb540ffdb56eb384cb1a7d47c4510f76": {
+      "guid": "fb540ffdb56eb384cb1a7d47c4510f76",
+      "name": "FakePlant-01",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/FakePlant-01.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "f18dd9a2548c5f240990d59d2e3fbbd3": {
+      "guid": "f18dd9a2548c5f240990d59d2e3fbbd3",
+      "name": "FakePlant-02",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/FakePlant-02.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "636238aba692cc94ca50b8ae785b2bfc": {
+      "guid": "636238aba692cc94ca50b8ae785b2bfc",
+      "name": "FakePlant-03",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/FakePlant-03.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "dcac4e7f1f2f045458f91e66ac029fa9": {
+      "guid": "dcac4e7f1f2f045458f91e66ac029fa9",
+      "name": "FakePlant-04",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/FakePlant-04.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "673e9376368524ddb99516018b1f23c2": {
+      "guid": "673e9376368524ddb99516018b1f23c2",
+      "name": "Fridge01",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Fridge-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Fridge-01/Body/FreezerSnappingPlane",
+          "planeId": 72358335,
+          "position": [
+            0.14452842329688304,
+            1.3353001481288593,
+            0.0013000001782055431
+          ],
+          "rotation": [
+            -0.0038715656083948857,
+            0.7070962076756425,
+            -0.003871568309419785,
+            0.7070962076904314
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-01/Body/UpperSnappingPlane",
+          "planeId": 1875829634,
+          "position": [
+            0.03740025069155815,
+            0.7622746061262163,
+            0.10635186670630548
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-01/Body/MiddleSnappingPlane",
+          "planeId": 3970607390,
+          "position": [
+            0.03740025069155815,
+            0.3705300590537027,
+            0.10635186670630548
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-01/Body/BottomSnappingPlane",
+          "planeId": 1416075363,
+          "position": [
+            0.03740025069155815,
+            0.07810001379552446,
+            0.10635186670630548
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-01/MainDoor/UpperSnappingPlane",
+          "planeId": 1713924847,
+          "position": [
+            -0.24356963614306193,
+            0.8982000151533032,
+            0.20498422578186856
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-01/MainDoor/MIddleSnappingPlane",
+          "planeId": 680186532,
+          "position": [
+            -0.24356963614306193,
+            0.5882999830686293,
+            0.20498422578186856
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-01/MainDoor/BottomSnappingPlane",
+          "planeId": 1586615944,
+          "position": [
+            -0.24356963614306193,
+            0.22969994893785012,
+            0.20498422578186856
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-01/SnapSurface_Top",
+          "planeId": 1829120135,
+          "position": [
+            2.9802322387695312e-08,
+            1.9201221466064453,
+            0.026384621858596802
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "4dcc461f4b1adbd4e8ae8955b559624f": {
+      "guid": "4dcc461f4b1adbd4e8ae8955b559624f",
+      "name": "Fridge-02",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Fridge-02.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Fridge-02/Body/FreezerSnappingPlane",
+          "planeId": 2582692838,
+          "position": [
+            0.0,
+            0.8690999746322632,
+            0.009999999776482582
+          ],
+          "rotation": [
+            -0.0038715649861842394,
+            0.7070962190628052,
+            -0.0038715677801519632,
+            0.7070962190628052
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-02/Body/UpperSnappingPlane",
+          "planeId": 250667326,
+          "position": [
+            0.0,
+            0.5419999957084656,
+            -0.012299999594688416
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-02/Body/MiddleSnappingPlane",
+          "planeId": 1596493863,
+          "position": [
+            0.0,
+            0.28600001335144043,
+            -0.012299999594688416
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-02/Body/BottomSnappingPlane",
+          "planeId": 1429717700,
+          "position": [
+            0.0,
+            0.10499999672174454,
+            -0.012299999594688416
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-02/Freezer Door/Model/SnappingPlane",
+          "planeId": 2922783057,
+          "position": [
+            0.000170975923538208,
+            0.9239181578159332,
+            0.32835614029318094
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-02/Main Door/Model/SnappingPlane",
+          "planeId": 2274987290,
+          "position": [
+            -0.001229017972946167,
+            0.5641971230506897,
+            0.3300561401993036
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-02/Main Door/Model/SnappingPlane",
+          "planeId": 1687916465,
+          "position": [
+            -0.0012029707431793213,
+            0.30403006076812744,
+            0.3300561401993036
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-02/SnapSurface_Top ",
+          "planeId": 2129439726,
+          "position": [
+            0.0,
+            1.3320000171661377,
+            0.020999999716877937
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "23fc2f58ab6441e4dbf6171ca48bc45e": {
+      "guid": "23fc2f58ab6441e4dbf6171ca48bc45e",
+      "name": "Fridge-03",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Fridge-03.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Fridge-03/Body/UpperSnappingPlane",
+          "planeId": 3351740517,
+          "position": [
+            0.0,
+            0.5410000085830688,
+            -0.07530000060796738
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-03/Body/MiddleSnappingPlane",
+          "planeId": 3121845210,
+          "position": [
+            0.0,
+            0.28700000047683716,
+            -0.07530000060796738
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-03/Body/BottomSnappingPlane",
+          "planeId": 3202507841,
+          "position": [
+            0.0,
+            0.10360000282526016,
+            -0.07530000060796738
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-03/Main Door/Model/SnappingPlane",
+          "planeId": 146320033,
+          "position": [
+            -0.0012029409408569336,
+            0.30222222208976746,
+            0.20734043419361115
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-03/Main Door/Model/SnappingPlane",
+          "planeId": 3872658628,
+          "position": [
+            -0.0012028813362121582,
+            0.5623892545700073,
+            0.20734043419361115
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-03/SnapSurface_Top",
+          "planeId": 382068447,
+          "position": [
+            0.0,
+            0.9070000052452087,
+            -0.03799999877810478
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "3d0e254bf4e859a4da4678ff00b786ce": {
+      "guid": "3d0e254bf4e859a4da4678ff00b786ce",
+      "name": "Fridge-04",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Fridge-04.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Fridge-04/Body/UpperSnappingPlane",
+          "planeId": 4047729518,
+          "position": [
+            0.0,
+            0.6209999918937683,
+            0.007199999876320362
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-04/Body/MiddleSnappingPlane",
+          "planeId": 2909365894,
+          "position": [
+            0.0,
+            0.3596000075340271,
+            0.007199999876320362
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-04/Body/BottomSnappingPlane",
+          "planeId": 2920396719,
+          "position": [
+            0.0,
+            0.053199999034404755,
+            -0.004800000227987766
+          ],
+          "rotation": [
+            0.0,
+            0.7071068286895752,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Fridge-04/SnapSurface_Top",
+          "planeId": 1097024616,
+          "position": [
+            0.0,
+            0.9750000238418579,
+            0.004999999888241291
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "2f7038708798d1142907dc90af82d369": {
+      "guid": "2f7038708798d1142907dc90af82d369",
+      "name": "KitchenStand-01",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/KitchenStand-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-01/Body/RigidColliders/Stand/SnappingPlane_Top",
+          "planeId": 1058593431,
+          "position": [
+            0.005222320556640625,
+            0.9090000392144465,
+            5.823021312811871e-05
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0000001343588565
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-01/Body/SnappingPlane_CabinetSmallR",
+          "planeId": 2401744898,
+          "position": [
+            -0.05169677734375,
+            0.027000000700354576,
+            0.1857585906982422
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-01/Body/SnappingPlane_CabinetSmallL",
+          "planeId": 1072213379,
+          "position": [
+            -0.05169677734375,
+            0.027000000700354576,
+            0.5170000195503235
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-01/Body/SnappingPlane_CabinetLargeR",
+          "planeId": 122997290,
+          "position": [
+            -0.08860969543457031,
+            0.027000000700354576,
+            -0.5265169143676758
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-01/Body/SnappingPlane_CabinetLargeL",
+          "planeId": 750390367,
+          "position": [
+            -0.14552879333496094,
+            0.02699997089803219,
+            -0.2056140899658203
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-01/Drawer/SnappingPlane_Drawer",
+          "planeId": 3627793258,
+          "position": [
+            -0.08422569185495377,
+            0.6995053924620152,
+            0.3378137946128845
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.004363274201750755,
+            0.9999905228614807
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "b92b45eccd52a3a48ae3b1a587df4d3a": {
+      "guid": "b92b45eccd52a3a48ae3b1a587df4d3a",
+      "name": "KitchenStand-02",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/KitchenStand-02.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-02/Body/Stand/SnappingPlane_Stand",
+          "planeId": 3953492027,
+          "position": [
+            -9.822845458984375e-05,
+            0.9049269556999207,
+            5.960464477539063e-08
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-02/Drawer/SnappingPlane_Drawer",
+          "planeId": 4000228351,
+          "position": [
+            -0.041837215423583984,
+            0.6652474403381348,
+            0.34904545545578003
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-02/SnappingPlanes/SnappingPlane",
+          "planeId": 1179051615,
+          "position": [
+            -0.041837215423583984,
+            0.12600000202655792,
+            0.5049999952316284
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-02/SnappingPlanes/SnappingPlane",
+          "planeId": 2742372068,
+          "position": [
+            -0.041837215423583984,
+            0.12600000202655792,
+            0.19499999284744263
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-02/SnappingPlanes/SnappingPlane",
+          "planeId": 3575784202,
+          "position": [
+            -0.041837215423583984,
+            0.12600000202655792,
+            -0.1899999976158142
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-02/SnappingPlanes/SnappingPlane",
+          "planeId": 1245733973,
+          "position": [
+            -0.041837215423583984,
+            0.12600000202655792,
+            -0.5009999871253967
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "543e4a8921adb7648a5b6584a3c7e42e": {
+      "guid": "543e4a8921adb7648a5b6584a3c7e42e",
+      "name": "KitchenStand-03",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/KitchenStand-03.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-03/Snapping Planes/SnappingPlaneL",
+          "planeId": 2140421306,
+          "position": [
+            0.11535751819610596,
+            0.0689999982714653,
+            0.3760170340538025
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-03/Snapping Planes/SnappingPlaneR",
+          "planeId": 1650460601,
+          "position": [
+            -0.1459999978542328,
+            0.06748665124177933,
+            -0.33899998664855957
+          ],
+          "rotation": [
+            0.0,
+            0.3563884496688843,
+            0.0,
+            0.9343379139900208
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/KitchenStand-03/SnappingPlane_Stand",
+          "planeId": 1245990213,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "9400b5d610d24fd4599dfca4b4b12a38": {
+      "guid": "9400b5d610d24fd4599dfca4b4b12a38",
+      "name": "Kitchen-TopCabinet-01",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Kitchen-TopCabinet-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Kitchen-TopCabinet-01/SnapSurface_Top",
+          "planeId": 16748064,
+          "position": [
+            0.0027178525924682617,
+            0.29499998688697815,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Kitchen-TopCabinet-01/SnappingPlane",
+          "planeId": 3806991955,
+          "position": [
+            0.0,
+            -0.26100000739097595,
+            0.34299999475479126
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Kitchen-TopCabinet-01/SnappingPlane",
+          "planeId": 231833367,
+          "position": [
+            0.0,
+            -0.26100000739097595,
+            -0.3684999942779541
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "0b71162661c059d40bb11a84639190d4": {
+      "guid": "0b71162661c059d40bb11a84639190d4",
+      "name": "Kitchen-TopCabinet-02",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Kitchen-TopCabinet-02.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Kitchen-TopCabinet-02/SnapSurface_Top",
+          "planeId": 2853139240,
+          "position": [
+            -0.0032961517572402954,
+            0.29290851950645447,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Kitchen-TopCabinet-02/SnappingPlane (1)",
+          "planeId": 2745728620,
+          "position": [
+            -0.024000000208616257,
+            -0.26100000739097595,
+            0.3149999976158142
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Kitchen-TopCabinet-02/SnappingPlane (2)",
+          "planeId": 200550661,
+          "position": [
+            -0.024000000208616257,
+            -0.26100000739097595,
+            -0.32600000500679016
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "26d66abeb1677bd4c89a53282ddf884c": {
+      "guid": "26d66abeb1677bd4c89a53282ddf884c",
+      "name": "Kitchen-TopCabinet-03",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Kitchen-TopCabinet-03.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Kitchen-TopCabinet-03/SnappingPlane (3)",
+          "planeId": 1715061752,
+          "position": [
+            0.10819999873638153,
+            -0.23000000417232513,
+            0.3149999976158142
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Kitchen-TopCabinet-03/SnappingPlane (4)",
+          "planeId": 1222322528,
+          "position": [
+            -0.12759999930858612,
+            -0.23000000417232513,
+            -0.3610999882221222
+          ],
+          "rotation": [
+            0.0,
+            0.3362223505973816,
+            0.0,
+            0.9417826533317566
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "309b92538988e1842874801497b15437": {
+      "guid": "309b92538988e1842874801497b15437",
+      "name": "Nightstand-01",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Nightstand-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Nightstand-01/Model/SnappingPlane",
+          "planeId": 2194844070,
+          "position": [
+            0.0,
+            0.4350000023841858,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Nightstand-01/Model/SnappingPlane",
+          "planeId": 3096402316,
+          "position": [
+            0.0,
+            0.6010000109672546,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Nightstand-01/Model/Drawer 1/SnappingPlane_Drawer",
+          "planeId": 1824533893,
+          "position": [
+            -0.00015158206224441528,
+            0.2976999990642071,
+            -0.020999999716877937
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Nightstand-01/Model/Drawer 2/SnappingPlane_Drawer",
+          "planeId": 2965958865,
+          "position": [
+            -0.00015158206224441528,
+            0.17853636667132378,
+            -0.020999999716877937
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "16ae97c73e8ecf54582551cb272915fe": {
+      "guid": "16ae97c73e8ecf54582551cb272915fe",
+      "name": "Nightstand-02",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Nightstand-02.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Nightstand-02/Model/SnappingPlane",
+          "planeId": 2280436636,
+          "position": [
+            -0.0027000000700354576,
+            0.3799999952316284,
+            -0.003599999938160181
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Nightstand-02/Model/SnappingPlane",
+          "planeId": 1199618870,
+          "position": [
+            -0.004600000102072954,
+            0.6019999980926514,
+            -0.003599999938160181
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Nightstand-02/Model/Drawer/SnappingPlane_Drawer",
+          "planeId": 550411425,
+          "position": [
+            -0.001500000013038516,
+            0.24789998680353165,
+            -0.003599999938160181
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "9682057f258abf545afd959a412d39ab": {
+      "guid": "9682057f258abf545afd959a412d39ab",
+      "name": "Nightstand-03",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Nightstand-03.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Nightstand-03/Model/SnappingPlane",
+          "planeId": 1483595555,
+          "position": [
+            0.0,
+            0.21690000593662262,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Nightstand-03/Model/SnappingPlane",
+          "planeId": 3190550700,
+          "position": [
+            0.0,
+            0.6001999974250793,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Nightstand-03/Model/Drawer/SnappingPlane_Drawer",
+          "planeId": 3285155501,
+          "position": [
+            0.0,
+            0.3824865520000458,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "2fd67b10a8a4d0f4fbd12507c3279739": {
+      "guid": "2fd67b10a8a4d0f4fbd12507c3279739",
+      "name": "Nightstand-04",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Nightstand-04.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Nightstand-04/Model/SnappingPlane",
+          "planeId": 3366316663,
+          "position": [
+            0.0,
+            0.4413999915122986,
+            0.09499000012874603
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Nightstand-04/Model/SnappingPlane",
+          "planeId": 421109051,
+          "position": [
+            0.000750000006519258,
+            0.6572999954223633,
+            -0.06449999660253525
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Nightstand-04/Model/Drawer 1/SnappingPlane_Drawer",
+          "planeId": 1473928858,
+          "position": [
+            0.0,
+            0.2648617923259735,
+            0.027999999932944775
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Nightstand-04/Model/Drawer 2/SnappingPlane_Drawer",
+          "planeId": 2160834889,
+          "position": [
+            0.0,
+            0.108800008893013,
+            0.032999999821186066
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "a0ff7c12a9698a54ebcb9d21dc509aef": {
+      "guid": "a0ff7c12a9698a54ebcb9d21dc509aef",
+      "name": "OutdoorCooler",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/OutdoorCooler.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/OutdoorCooler/Model/SnappingPlane (1)",
+          "planeId": 441224003,
+          "position": [
+            0.0,
+            0.023000000044703484,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/OutdoorCooler/SnapSurface_Top",
+          "planeId": 2550926715,
+          "position": [
+            0.005434572696685791,
+            0.46025821566581726,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "0d375c21fe6d8b545be10f575c171956": {
+      "guid": "0d375c21fe6d8b545be10f575c171956",
+      "name": "OutdoorCooler-Color-01",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/OutdoorCooler-Color-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/OutdoorCooler-Color-01/Model/SnappingPlane (1)",
+          "planeId": 441224003,
+          "position": [
+            0.0,
+            0.023000000044703484,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/OutdoorCooler-Color-01/SnapSurface_Top",
+          "planeId": 2550926715,
+          "position": [
+            0.005434572696685791,
+            0.46025821566581726,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "665957b68e4aaef4da1ac74fce7dc23c": {
+      "guid": "665957b68e4aaef4da1ac74fce7dc23c",
+      "name": "OutdoorCooler-Color-02",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/OutdoorCooler-Color-02.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/OutdoorCooler-Color-02/Model/SnappingPlane (1)",
+          "planeId": 441224003,
+          "position": [
+            0.0,
+            0.023000000044703484,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/OutdoorCooler-Color-02/SnapSurface_Top",
+          "planeId": 2550926715,
+          "position": [
+            0.005434572696685791,
+            0.46025821566581726,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "4268be9900b6b1b4cb2563c245f892e3": {
+      "guid": "4268be9900b6b1b4cb2563c245f892e3",
+      "name": "OutdoorCooler-Color-03",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/OutdoorCooler-Color-03.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/OutdoorCooler-Color-03/Model/SnappingPlane (1)",
+          "planeId": 441224003,
+          "position": [
+            0.0,
+            0.023000000044703484,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/OutdoorCooler-Color-03/SnapSurface_Top",
+          "planeId": 2550926715,
+          "position": [
+            0.005434572696685791,
+            0.46025821566581726,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "3ff1ecfe68d147a4eac4fbe971e2fda3": {
+      "guid": "3ff1ecfe68d147a4eac4fbe971e2fda3",
+      "name": "OutdoorCooler-Color-04",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/OutdoorCooler-Color-04.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/OutdoorCooler-Color-04/Model/SnappingPlane (1)",
+          "planeId": 441224003,
+          "position": [
+            0.0,
+            0.023000000044703484,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/OutdoorCooler-Color-04/SnapSurface_Top",
+          "planeId": 2550926715,
+          "position": [
+            0.005434572696685791,
+            0.46025821566581726,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "671da4ad9444844e596235346b5c7436": {
+      "guid": "671da4ad9444844e596235346b5c7436",
+      "name": "PictureFrame",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/PictureFrame.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/PictureFrame/SnapSurface_Top",
+          "planeId": 1873419008,
+          "position": [
+            0.0,
+            0.014999999664723873,
+            -0.0020008087158203125
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "39f621bdf9aa7e2408f0ec2049821ae8": {
+      "guid": "39f621bdf9aa7e2408f0ec2049821ae8",
+      "name": "Sofa-01",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Sofa-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Sofa-01/SnapSurface_Seat",
+          "planeId": 1077111857,
+          "position": [
+            0.10682499408721924,
+            0.47999998927116394,
+            0.008999999612569809
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "301b7d5a5d7c85542898757f002af5d4": {
+      "guid": "301b7d5a5d7c85542898757f002af5d4",
+      "name": "Sofa-02",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Sofa-02.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Sofa-02/Model/Collider/SnappingPlane_Top",
+          "planeId": 2254295051,
+          "position": [
+            0.12624765569355606,
+            0.441892818551317,
+            4.470348556406085e-08
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0000000441997332
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "6e30cb5d1d6f09d46bcb6aaadc667e1e": {
+      "guid": "6e30cb5d1d6f09d46bcb6aaadc667e1e",
+      "name": "Sofa-03",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Sofa-03.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Sofa-03/SnapSurface_Seat",
+          "planeId": 872593625,
+          "position": [
+            0.1747249960899353,
+            0.4440000057220459,
+            0.008500000461935997
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "7aa98119525c4f04496c44215c03776c": {
+      "guid": "7aa98119525c4f04496c44215c03776c",
+      "name": "Sofa-04",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Sofa-04.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Sofa-04/SnapSurface_Seat",
+          "planeId": 1267489834,
+          "position": [
+            0.19331249594688416,
+            0.4779999852180481,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "ed4f5a193a79c824d80290e32591d4a4": {
+      "guid": "ed4f5a193a79c824d80290e32591d4a4",
+      "name": "Table-01",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Table-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Table-01/Model/Collider/SnappingPlane_Top (1)",
+          "planeId": 1325319658,
+          "position": [
+            -2.9802322387695312e-08,
+            0.6417711973190308,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "c510c6ca10ea66145915b42a601a3ab3": {
+      "guid": "c510c6ca10ea66145915b42a601a3ab3",
+      "name": "DinnerTable-02",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Table-02.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Table-02/Model/Collider/SnappingPlane_Top",
+          "planeId": 3563413838,
+          "position": [
+            0.0,
+            0.6645360179245472,
+            2.9802322387695312e-08
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "084ad44d712254c46b20e293739dbb64": {
+      "guid": "084ad44d712254c46b20e293739dbb64",
+      "name": "DinnerTable-03",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Table-03.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Table-03/Model/Collider/SnappingPlane_Top",
+          "planeId": 4237034600,
+          "position": [
+            0.0,
+            0.6597733497619629,
+            -5.960464477539063e-08
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "55fbc50fdaf7cda4796d3ebf0e5fcce6": {
+      "guid": "55fbc50fdaf7cda4796d3ebf0e5fcce6",
+      "name": "DinnerTable-04",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Table-04.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Table-04/Model/Collider/SnappingPlane_Top",
+          "planeId": 3628702072,
+          "position": [
+            0.0,
+            0.7916039824485779,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "382f776882d34de4eab3fb57a8bd3f08": {
+      "guid": "382f776882d34de4eab3fb57a8bd3f08",
+      "name": "DinnerTable-05",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/Table-05.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Table-05/Model/SnappingPlane_Combined",
+          "planeId": 3141919004,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "fc3179c8e6bc0214d9fdd92cf7bbdfd7": {
+      "guid": "fc3179c8e6bc0214d9fdd92cf7bbdfd7",
+      "name": "WC-01",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/WC-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/WC-01/SnapSurface_Top",
+          "planeId": 1094289402,
+          "position": [
+            0.0,
+            0.49399998784065247,
+            -0.2865000069141388
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "334efb28d1a14dc4eaa597705364a25c": {
+      "guid": "334efb28d1a14dc4eaa597705364a25c",
+      "name": "WoodenHand",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/_SpawnReady/WoodenHand.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "4038624ba7f467147a09fe06aa50c71b": {
+      "guid": "4038624ba7f467147a09fe06aa50c71b",
+      "name": "WallShelf-01",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/WallShelf-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/WallShelf-01/Model/SnappingPlane",
+          "planeId": 1924639981,
+          "position": [
+            0.0,
+            0.017003661021590233,
+            0.00223589688539505
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "61b963187257e7b47b758223a4369d3b": {
+      "guid": "61b963187257e7b47b758223a4369d3b",
+      "name": "WallShelf-02",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/WallShelf-02.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/WallShelf-02/Model/Snapping Planes/SnappingPlane",
+          "planeId": 1960121093,
+          "position": [
+            0.2886395752429962,
+            -0.1656070053577423,
+            0.006401427090167999
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/WallShelf-02/Model/Snapping Planes/SnappingPlane",
+          "planeId": 3195132289,
+          "position": [
+            0.14967702329158783,
+            -0.08215121179819107,
+            0.006401427090167999
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/WallShelf-02/Model/Snapping Planes/SnappingPlane",
+          "planeId": 4195716217,
+          "position": [
+            0.010714493691921234,
+            0.0013045817613601685,
+            0.006401427090167999
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/WallShelf-02/Model/Snapping Planes/SnappingPlane",
+          "planeId": 1719797630,
+          "position": [
+            -0.12824805080890656,
+            0.084760382771492,
+            0.006401427090167999
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/WallShelf-02/Model/Snapping Planes/SnappingPlane",
+          "planeId": 2809766967,
+          "position": [
+            -0.26721060276031494,
+            0.16821618378162384,
+            0.006401427090167999
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "e614aadf1d7897b4a8103b872f1e17ef": {
+      "guid": "e614aadf1d7897b4a8103b872f1e17ef",
+      "name": "WallShelf-03",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/WallShelf-03.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/WallShelf-03/Model/SnappingPlane",
+          "planeId": 617043282,
+          "position": [
+            0.0,
+            0.0072087375447154045,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "52c2d6e9742d04e4f85c2d63868d32ad": {
+      "guid": "52c2d6e9742d04e4f85c2d63868d32ad",
+      "name": "WallShelf-04",
+      "path": "Assets/_Project/Features/Decoration/Prefabs/WallShelf-04.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/WallShelf-04/Model/Snapping Planes/SnappingPlane",
+          "planeId": 3435004528,
+          "position": [
+            0.0,
+            -0.25079670548439026,
+            0.0030660778284072876
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/WallShelf-04/Model/Snapping Planes/SnappingPlane",
+          "planeId": 2933712143,
+          "position": [
+            -0.14730136096477509,
+            0.00861901044845581,
+            0.0030660778284072876
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/WallShelf-04/Model/Snapping Planes/SnappingPlane",
+          "planeId": 2791547493,
+          "position": [
+            -0.15667587518692017,
+            0.26914843916893005,
+            0.0030660778284072876
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "9e84f68ca77e2874db52bab0daf660df": {
+      "guid": "9e84f68ca77e2874db52bab0daf660df",
+      "name": "MetalDetector",
+      "path": "Assets/_Project/Features/Digging/MetalDetector.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "9e01f90a67c3d8b4290edbb8f9c54c85": {
+      "guid": "9e01f90a67c3d8b4290edbb8f9c54c85",
+      "name": "Shovel",
+      "path": "Assets/_Project/Features/Digging/Shovel.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "3aa61d6643d20ce49b6cbdfd2c8f0f87": {
+      "guid": "3aa61d6643d20ce49b6cbdfd2c8f0f87",
+      "name": "Chest-01",
+      "path": "Assets/_Project/Features/Digging/Treasure/Prefabs/Chest-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Chest-01/Model/Chest-01/Bottom/SnappingPlane_Top",
+          "planeId": 2032527383,
+          "position": [
+            -0.00033837561385436363,
+            -0.20407116177055973,
+            5.5127999116621335e-11
+          ],
+          "rotation": [
+            2.980232449711906e-08,
+            1.6742431774297017e-08,
+            6.64615584788919e-10,
+            1.0000000798674964
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "82d10f3299b7cd74dafb0f8e7c8397c1": {
+      "guid": "82d10f3299b7cd74dafb0f8e7c8397c1",
+      "name": "Chest-02",
+      "path": "Assets/_Project/Features/Digging/Treasure/Prefabs/Chest-02.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Chest-02/Model/Chest-01/Bottom/SnappingPlane_Top",
+          "planeId": 3962200099,
+          "position": [
+            -0.00033837561385436363,
+            -0.20407116177055973,
+            5.5127999116621335e-11
+          ],
+          "rotation": [
+            2.980232449711906e-08,
+            1.6742431774297017e-08,
+            6.64615584788919e-10,
+            1.0000000798674964
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "9c6d464babff6a04baff2f2df96c7d45": {
+      "guid": "9c6d464babff6a04baff2f2df96c7d45",
+      "name": "Key",
+      "path": "Assets/_Project/Features/Digging/Treasure/Prefabs/Key-01.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "fbcc2a5eaabf3fb43a467fee85e8efa8": {
+      "guid": "fbcc2a5eaabf3fb43a467fee85e8efa8",
+      "name": "Key-02",
+      "path": "Assets/_Project/Features/Digging/Treasure/Prefabs/Key-02.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "53322e050eb38da40960d258ce6f78b9": {
+      "guid": "53322e050eb38da40960d258ce6f78b9",
+      "name": "Motorcycle-01",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Motorbike/Motorcycle-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Motorcycle-01/SnappingPlane_Luggage",
+          "planeId": 3246193648,
+          "position": [
+            2.5044741050805897e-05,
+            0.31814876198768616,
+            -0.30956602096557617
+          ],
+          "rotation": [
+            0.1091497614979744,
+            0.00040893047116696835,
+            -0.006254039704799652,
+            0.9940056204795837
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "75546aca59a8721459a99460cea36a05": {
+      "guid": "75546aca59a8721459a99460cea36a05",
+      "name": "Motorcycle-01-GasTankCover",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Motorbike/Motorcycle-01-GasTankCover.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "e9857b0c210efe74a8bfe2147e736495": {
+      "guid": "e9857b0c210efe74a8bfe2147e736495",
+      "name": "MotorcycleEngine-01",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Motorbike/MotorcycleEngine-01.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "625c5a7de7a01a34999c2d8c239e13be": {
+      "guid": "625c5a7de7a01a34999c2d8c239e13be",
+      "name": "Motorcycle-Seat-01",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Motorbike/Motorcycle-Seat-01.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "80bdc9eef7e4c38419a7a313e87bd141": {
+      "guid": "80bdc9eef7e4c38419a7a313e87bd141",
+      "name": "MotorcycleTire-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Motorbike/MotorcycleTire-1.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/MotorcycleTire-1/Model/SnappingPlane_Top",
+          "planeId": 1022497949,
+          "position": [
+            0.0,
+            0.06884084821813022,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0000000500651538
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "d699ecbfb8a228245ab2a9867bc962e5": {
+      "guid": "d699ecbfb8a228245ab2a9867bc962e5",
+      "name": "RV-1986",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-1986/RV-1986.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/RV-1986/Model/Body/RV-1986-PaintableMesh",
+          "surfaceId": 1356688929,
+          "material": 0
+        }
+      ],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/RV-1986/Model/Body/SnappingPlane_Combined",
+          "planeId": 2538141882,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/Model/Body/SnappingPlane_Floor",
+          "planeId": 3817189935,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/Model/Body/SnappingPlane_Dashboard",
+          "planeId": 3656879953,
+          "position": [
+            0.0003408193588256836,
+            1.512631893157959,
+            4.4468841552734375
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/Model/Body/SnappingPlane_Console",
+          "planeId": 3738571737,
+          "position": [
+            3.680586814880371e-05,
+            0.9512217044830322,
+            4.093823432922363
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/Model/Body/SnappingPlane_Front",
+          "planeId": 921520686,
+          "position": [
+            2.2739171981811523e-05,
+            1.0477908849716187,
+            4.302000045776367
+          ],
+          "rotation": [
+            0.7071068286895752,
+            4.2760933682828295e-15,
+            0.0,
+            0.7071068286895752
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/Model/Body/SnappingPlane_Top",
+          "planeId": 717186757,
+          "position": [
+            0.0,
+            0.613032341003418,
+            3.787527322769165
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/Model/Body/SnappingPlane_Top",
+          "planeId": 3574417780,
+          "position": [
+            -1.0841747522354126,
+            0.612823486328125,
+            4.426170349121094
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/Model/Body/SnappingPlane_Top",
+          "planeId": 1834233495,
+          "position": [
+            0.9511563777923584,
+            0.6125949025154114,
+            4.5312395095825195
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/Model/Body/SnappingPlane_Top",
+          "planeId": 2901020018,
+          "position": [
+            0.9901697039604187,
+            0.6123602986335754,
+            4.881353855133057
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/Model/Body/SnappingPlane_Top",
+          "planeId": 1885675474,
+          "position": [
+            -0.7178524136543274,
+            0.870549201965332,
+            3.6759886741638184
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/Model/Body/SnappingPlane_Top",
+          "planeId": 437903559,
+          "position": [
+            0.7178424000740051,
+            0.8702991008758545,
+            3.676039457321167
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/Model/Body/SnappingPlane_FrontPlate",
+          "planeId": 896909946,
+          "position": [
+            0.0,
+            0.1577904373407364,
+            5.243338108062744
+          ],
+          "rotation": [
+            -3.742782439530856e-08,
+            0.5165637731552124,
+            0.8562487959861755,
+            -2.2579719427540113e-08
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/RoofrackSystem/RoofRack/SnappingPlane_RoofRack",
+          "planeId": 823158586,
+          "position": [
+            0.0,
+            5.7059789709542255,
+            -0.8182256873803455
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999657714653
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/MotorcycleHolderSystem/MotorcycleHolder/SnappingPlane_MotorcycleHolder",
+          "planeId": 3741524211,
+          "position": [
+            0.0,
+            0.22810000367462635,
+            -5.340000212192535
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-1986/SnappingPlane_Exterior",
+          "planeId": 1277229093,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "649f689e9439e6646a5b44de873cda86": {
+      "guid": "649f689e9439e6646a5b44de873cda86",
+      "name": "RV-1986-Stoplight",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-1986/RV-1986-Brakelight.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "6ba3f49efe22f654782429c314b4559a": {
+      "guid": "6ba3f49efe22f654782429c314b4559a",
+      "name": "RV-1986-Door",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-1986/RV-1986-Door.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/RV-1986-Door/RV-1986-Door",
+          "surfaceId": 3617812564,
+          "material": 2
+        }
+      ],
+      "planes": [],
+      "organicFood": false
+    },
+    "b6690f8b73b44354b8ecfbceb0f9375a": {
+      "guid": "b6690f8b73b44354b8ecfbceb0f9375a",
+      "name": "RV-1986-FrontBumper",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-1986/RV-1986-FrontBumper.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "81932be8cc3a91141b396631fd853f85": {
+      "guid": "81932be8cc3a91141b396631fd853f85",
+      "name": "RV-1986-Headlight",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-1986/RV-1986-Headlight.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "b81969ce891d0e44e940e8bd5e8bd212": {
+      "guid": "b81969ce891d0e44e940e8bd5e8bd212",
+      "name": "RV-1986-Hood",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-1986/RV-1986-Hood.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/RV-1986-Hood/Model",
+          "surfaceId": 2743680862,
+          "material": 0
+        }
+      ],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/RV-1986-Hood/Model/SnappingPlane_PartSurface",
+          "planeId": 3510201447,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "bde57dab145bb7f41a9dc926b0401553": {
+      "guid": "bde57dab145bb7f41a9dc926b0401553",
+      "name": "RV-1986-RearBumper",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-1986/RV-1986-RearBumper.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/RV-1986-RearBumper/SnappingPlane_PartSurface",
+          "planeId": 391275910,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "4d383baea2f57824aa90b0dd21bc34b1": {
+      "guid": "4d383baea2f57824aa90b0dd21bc34b1",
+      "name": "Rv-C-Brakelight",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-C/Parts/Rv-C-Brakelight.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "e05151d2fc747c94a9e3b58371287d5e": {
+      "guid": "e05151d2fc747c94a9e3b58371287d5e",
+      "name": "Rv-C-FrontBumper",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-C/Parts/Rv-C-FrontBumper.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Rv-C-FrontBumper/SnappingPlane_PartSurface",
+          "planeId": 1263857512,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071068286895752
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "573598e049ab517429ae4ea4d169b477": {
+      "guid": "573598e049ab517429ae4ea4d169b477",
+      "name": "Rv-C-Headlight",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-C/Parts/Rv-C-Headlight.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "0f2235c712e8b384b9e460c834ca6da4": {
+      "guid": "0f2235c712e8b384b9e460c834ca6da4",
+      "name": "Rv-C-Hood",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-C/Parts/Rv-C-Hood.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-C-Hood/Model",
+          "surfaceId": 966593584,
+          "material": 0
+        }
+      ],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Rv-C-Hood/Model/SnappingPlane_PartSurface",
+          "planeId": 338449674,
+          "position": [
+            0.6370000243186951,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            -0.7826082110404968,
+            0.0,
+            0.0,
+            0.6225146651268005
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "09fc9efe49dfc7740bdf5cbf1a6c6148": {
+      "guid": "09fc9efe49dfc7740bdf5cbf1a6c6148",
+      "name": "Rv-C-LeftDoor",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-C/Parts/Rv-C-LeftDoor.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-C-LeftDoor/Model/Body",
+          "surfaceId": 1784834108,
+          "material": 0
+        }
+      ],
+      "planes": [],
+      "organicFood": false
+    },
+    "407e4dddd161f4920a1b6d84bb71fd57": {
+      "guid": "407e4dddd161f4920a1b6d84bb71fd57",
+      "name": "Rv-C-MiddleDoor",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-C/Parts/Rv-C-MiddleDoor.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-C-MiddleDoor/Model",
+          "surfaceId": 1572201665,
+          "material": 0
+        }
+      ],
+      "planes": [],
+      "organicFood": false
+    },
+    "0d849acdcbaaf2f48956f217318dde5c": {
+      "guid": "0d849acdcbaaf2f48956f217318dde5c",
+      "name": "Rv-C-RearBumper",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-C/Parts/Rv-C-RearBumper.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Rv-C-RearBumper/SnappingPlane_PartSurface",
+          "planeId": 272817242,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071067094802856
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "7de8a3f07669fe2478c357392366f12f": {
+      "guid": "7de8a3f07669fe2478c357392366f12f",
+      "name": "Rv-C-RightDoor",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-C/Parts/Rv-C-RightDoor.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-C-RightDoor/Model/Body",
+          "surfaceId": 1784834108,
+          "material": 0
+        }
+      ],
+      "planes": [],
+      "organicFood": false
+    },
+    "0b648ea7d80e0fc4da4d6773d1e308e7": {
+      "guid": "0b648ea7d80e0fc4da4d6773d1e308e7",
+      "name": "Rv-C",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-C/Rv-C.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-C/Model/Body/CoverMesh",
+          "surfaceId": 1721696460,
+          "material": 0
+        },
+        {
+          "kind": "surface",
+          "path": "/Rv-C/Model/Body/CoverMesh2",
+          "surfaceId": 602331988,
+          "material": 0
+        },
+        {
+          "kind": "surface",
+          "path": "/Rv-C/Model/Hatches/GeneratorHatch/Pivot/Model",
+          "surfaceId": 4140465483,
+          "material": 1
+        },
+        {
+          "kind": "surface",
+          "path": "/Rv-C/Model/Hatches/WaterTankHatch/Pivot/Model",
+          "surfaceId": 772018439,
+          "material": 1
+        },
+        {
+          "kind": "surface",
+          "path": "/Rv-C/Model/Head/HeadCover",
+          "surfaceId": 4265943636,
+          "material": 1
+        },
+        {
+          "kind": "surface",
+          "path": "/Rv-C/Model/Head/HeadCover[Left]",
+          "surfaceId": 780948165,
+          "material": 0
+        },
+        {
+          "kind": "surface",
+          "path": "/Rv-C/Model/Exterior/AdditionalHatch1/Pivot/Model",
+          "surfaceId": 3451869016,
+          "material": 1
+        },
+        {
+          "kind": "surface",
+          "path": "/Rv-C/Model/Exterior/AdditionalHatch2/Pivot/Model",
+          "surfaceId": 230107163,
+          "material": 1
+        },
+        {
+          "kind": "surface",
+          "path": "/Rv-C/Model/Exterior/AdditionalHatch3/Pivot/Model",
+          "surfaceId": 1680010318,
+          "material": 1
+        }
+      ],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Rv-C/Model/Body/CoverMesh.003/Ground1/SnappingPlane_Top",
+          "planeId": 599985156,
+          "position": [
+            0.0006155967501692561,
+            0.866184990717936,
+            -2.410297934162929
+          ],
+          "rotation": [
+            2.943164206000836e-15,
+            0.0,
+            -4.235164736271502e-22,
+            1.000000050065161
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-C/Model/Body/CoverMesh.003/Hatch1/SnappingPlane_Top",
+          "planeId": 578170132,
+          "position": [
+            1.0179999699855615,
+            0.409999659956964,
+            -2.4414996953653567
+          ],
+          "rotation": [
+            2.071350013732598e-08,
+            1.5117515961282635e-08,
+            5.103253936100671e-08,
+            1.0000000459731564
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-C/Model/Body/CoverMesh.003/Hatch2/SnappingPlane_Top",
+          "planeId": 4182500257,
+          "position": [
+            1.045999968666031,
+            0.4000000089029084,
+            0.6289999783235387
+          ],
+          "rotation": [
+            1.4827044869658579e-08,
+            -1.9592657884981435e-08,
+            3.786801927585515e-08,
+            1.0000000546595609
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-C/Model/Body/CoverMesh.003/Hatch3/SnappingPlane_Top (1)",
+          "planeId": 81698225,
+          "position": [
+            -1.0175000043597204,
+            0.4089999890185541,
+            0.8444998492991022
+          ],
+          "rotation": [
+            -1.82107270929599e-09,
+            -1.946984323764056e-09,
+            8.315864497010494e-09,
+            1.0000000844163448
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-C/Model/Body/CoverMesh.003/Hatch4/SnappingPlane_Top (1)",
+          "planeId": 2224984461,
+          "position": [
+            -1.0175000050813097,
+            0.4089999550875618,
+            -0.41699995954025454
+          ],
+          "rotation": [
+            -1.82107270929599e-09,
+            -1.946984323764056e-09,
+            8.315864497010494e-09,
+            1.0000000844163448
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-C/Model/Body/CoverMesh.003/Hatch5/SnappingPlane_Top (1)",
+          "planeId": 4124018215,
+          "position": [
+            -1.0159999941361242,
+            0.4089997916806411,
+            -3.507999367026537
+          ],
+          "rotation": [
+            3.924007924149819e-09,
+            1.808116711909946e-08,
+            2.3458220643757244e-08,
+            1.0000000432841727
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-C/Model/Body/CoverMesh.003/SnappingPlane_Top",
+          "planeId": 1164866242,
+          "position": [
+            -0.011259197803395883,
+            2.101446977435265,
+            2.4959998502051195
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999657714653
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-C/Model/Body/CoverMesh.003/SnappingPlane_Combined",
+          "planeId": 2103193748,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071067094802856
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-C/SnappingPlane_Combined",
+          "planeId": 741291618,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-C/SnappingPlane_DashTop",
+          "planeId": 1997954188,
+          "position": [
+            0.5699999928474426,
+            1.4296000003814697,
+            2.809999942779541
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-C/SnappingPlane_ConsoleTray",
+          "planeId": 326097387,
+          "position": [
+            0.10999999940395355,
+            1.2350000143051147,
+            2.5899999141693115
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-C/RoofrackSystem/RVHippie-RoofRack/SnappingPlane_RoofRack",
+          "planeId": 3243371709,
+          "position": [
+            0.0,
+            4.584339502988735,
+            -1.2901754991811534
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999657714653
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-C/MotorcycleHolderSystem/MotorcycleHolder/SnappingPlane_MotorcycleHolder",
+          "planeId": 670326650,
+          "position": [
+            0.0,
+            0.34410001523792744,
+            -4.618000090122223
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "1eeef79f32600c44aba561bc2e84b753": {
+      "guid": "1eeef79f32600c44aba561bc2e84b753",
+      "name": "Rv-Hippie-Brakelight",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-Hippie/Parts/Rv-Hippie-Brakelight.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "19460351ca0a7c04d815bd6eda351d4c": {
+      "guid": "19460351ca0a7c04d815bd6eda351d4c",
+      "name": "Rv-Hippie-DoorBase",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-Hippie/Parts/Rv-Hippie-DoorBase.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-Hippie-DoorBase/Model",
+          "surfaceId": 558169005,
+          "material": 0
+        }
+      ],
+      "planes": [],
+      "organicFood": false
+    },
+    "6669218ec8037144bb445b51e32145e4": {
+      "guid": "6669218ec8037144bb445b51e32145e4",
+      "name": "Rv-Hippie-FrontBumper",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-Hippie/Parts/Rv-Hippie-FrontBumper.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-Hippie-FrontBumper/Model",
+          "surfaceId": 2270567686,
+          "material": 0
+        }
+      ],
+      "planes": [],
+      "organicFood": false
+    },
+    "ea7c60fa44bc49647b92a58aae6afce8": {
+      "guid": "ea7c60fa44bc49647b92a58aae6afce8",
+      "name": "Rv-Hippie-HeadLight",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-Hippie/Parts/Rv-Hippie-HeadLight.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "fb3441a0ffb2e2547b02e0b5ca28918c": {
+      "guid": "fb3441a0ffb2e2547b02e0b5ca28918c",
+      "name": "Rv-Hippie-Hood",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-Hippie/Parts/Rv-Hippie-Hood.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-Hippie-Hood/Model",
+          "surfaceId": 2251534907,
+          "material": 0
+        }
+      ],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Rv-Hippie-Hood/Model/SnappingPlane_PartSurface",
+          "planeId": 3606603916,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "20aad86e141b36847937d8f82da6535b": {
+      "guid": "20aad86e141b36847937d8f82da6535b",
+      "name": "Rv-Hippie-LeftDoor",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-Hippie/Parts/Rv-Hippie-LeftDoor.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-Hippie-LeftDoor/Model",
+          "surfaceId": 558169005,
+          "material": 0
+        }
+      ],
+      "planes": [],
+      "organicFood": false
+    },
+    "49e4a6b878e22214b87cce77517ce3dd": {
+      "guid": "49e4a6b878e22214b87cce77517ce3dd",
+      "name": "Rv-Hippie-RearBumper",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-Hippie/Parts/Rv-Hippie-RearBumper.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-Hippie-RearBumper/Model",
+          "surfaceId": 1244964444,
+          "material": 0
+        }
+      ],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Rv-Hippie-RearBumper/SnappingPlane_PartSurface",
+          "planeId": 1845296953,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "c85da905af8909c4189602b76a6b1bf4": {
+      "guid": "c85da905af8909c4189602b76a6b1bf4",
+      "name": "Rv-Hippie-RearDoor",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-Hippie/Parts/Rv-Hippie-RearDoor.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-Hippie-RearDoor/Model",
+          "surfaceId": 230832503,
+          "material": 2
+        }
+      ],
+      "planes": [],
+      "organicFood": false
+    },
+    "112c542c51f1db347a3141396ca25f9f": {
+      "guid": "112c542c51f1db347a3141396ca25f9f",
+      "name": "Rv-Hippie-RightDoor",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-Hippie/Parts/Rv-Hippie-RightDoor.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-Hippie-RightDoor/Model",
+          "surfaceId": 558169005,
+          "material": 0
+        }
+      ],
+      "planes": [],
+      "organicFood": false
+    },
+    "6960b40420a505949976c58ba0d7ac3b": {
+      "guid": "6960b40420a505949976c58ba0d7ac3b",
+      "name": "Rv-Hippie-SideDoor-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-Hippie/Parts/Rv-Hippie-SideDoor-1.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-Hippie-SideDoor-1/Model",
+          "surfaceId": 3407282157,
+          "material": 0
+        }
+      ],
+      "planes": [],
+      "organicFood": false
+    },
+    "976ac58a903716c43b437ffff8bbb765": {
+      "guid": "976ac58a903716c43b437ffff8bbb765",
+      "name": "Rv-Hippie-SignalLight",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-Hippie/Parts/Rv-Hippie-SignalLight.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "937027af24de4f94bb9db8a8192b5d93": {
+      "guid": "937027af24de4f94bb9db8a8192b5d93",
+      "name": "Rv-Hippie",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Rv-Hippie/Rv-Hippie.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/Rv-Hippie/Model/Body/1",
+          "surfaceId": 1741617772,
+          "material": 0
+        }
+      ],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Rv-Hippie/Model/Dashboard/SnappingPlane_Combined",
+          "planeId": 3841001249,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-Hippie/Model/Dashboard/SnappingPlane_Bottom",
+          "planeId": 867243889,
+          "position": [
+            -0.00023257732391357422,
+            0.5237001180648804,
+            1.5479998588562012
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-Hippie/Model/Body/3/Hull 1/SnappingPlane_Top",
+          "planeId": 161469349,
+          "position": [
+            -0.00023257731595279323,
+            0.47600006059213534,
+            0.3909999089916416
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999657714653
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-Hippie/Model/Body/3/Hull 4/SnappingPlane_Top",
+          "planeId": 3312094017,
+          "position": [
+            -0.0002444982444998354,
+            0.8151997549332258,
+            -1.1173001327582135
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999657714653
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-Hippie/Model/Body/3/Hull 5/SnappingPlane_Top",
+          "planeId": 3909347081,
+          "position": [
+            0.0011769532754494758,
+            1.1049996668354531,
+            -1.8650001319895695
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999657714653
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-Hippie/Model/Body/SnappingPlane_Combined",
+          "planeId": 3075236565,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            -0.7071068286895752,
+            0.0,
+            0.0,
+            0.7071067094802856
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-Hippie/RoofrackSystem/RVHippie-RoofRack/SnappingPlane_RoofRack",
+          "planeId": 1438841562,
+          "position": [
+            0.0,
+            2.332899990698663,
+            0.13789959683250919
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999657714653
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/Rv-Hippie/MotorcycleHolderSystem/MotorcycleHolder/SnappingPlane_MotorcycleHolder",
+          "planeId": 3741524211,
+          "position": [
+            0.0,
+            0.4161000121384859,
+            -2.6422999501228333
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "df321578632574b4a9d3394dbb489933": {
+      "guid": "df321578632574b4a9d3394dbb489933",
+      "name": "RV-SchoolBus",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-SchoolBus.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/RV-SchoolBus/Model/Body/RV-Schoolbus-RestorationCover",
+          "surfaceId": 1217844071,
+          "material": 0
+        }
+      ],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/RV-SchoolBus/Model/Body/FloorColliders/SnappingPlane_Floor",
+          "planeId": 480865720,
+          "position": [
+            0.0,
+            0.7120000123977661,
+            -1.3485000133514404
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-SchoolBus/Model/Body/RV-Schoolbus-RestorationCover/ExtShell/SnappingPlane_Combined",
+          "planeId": 193511889,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-SchoolBus/Model/Body/RV-Schoolbus-RestorationCover/ExtShell/SnappingPlane_Exterior",
+          "planeId": 331023649,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-SchoolBus/Model/Body/SnappingPlane_FrontPlate",
+          "planeId": 2376025298,
+          "position": [
+            0.0,
+            0.28999999165534973,
+            5.513099670410156
+          ],
+          "rotation": [
+            -3.0908619663705394e-08,
+            0.7071068286895752,
+            0.7071068286895752,
+            -3.0908619663705394e-08
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-SchoolBus/Model/Dashboard/SnappingPlane_DashTop",
+          "planeId": 430221640,
+          "position": [
+            0.6399999856948853,
+            1.4490000009536743,
+            3.8324999809265137
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-SchoolBus/Model/Dashboard/SnappingPlane_ConsoleShelf",
+          "planeId": 103250329,
+          "position": [
+            0.19380000233650208,
+            1.3559999465942383,
+            3.714099884033203
+          ],
+          "rotation": [
+            0.0,
+            0.14219707250595093,
+            0.0,
+            0.9898384213447571
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-SchoolBus/RoofrackSystem/RVHippie-RoofRack/SnappingPlane_RoofRack",
+          "planeId": 1216864833,
+          "position": [
+            0.0,
+            6.471298889151257,
+            -1.1898758212252765
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            0.9999999657714653
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/RV-SchoolBus/MotorcycleHolderSystem/MotorcycleHolder/SnappingPlane_MotorcycleHolder",
+          "planeId": 3741524211,
+          "position": [
+            0.0,
+            0.3561000097543001,
+            -6.106999933719635
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "83afe016821bd4646b3dcce35ff14431": {
+      "guid": "83afe016821bd4646b3dcce35ff14431",
+      "name": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-Schoolbus-Brakelight.prefab",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-Schoolbus-Brakelight.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "4b4ee8a7911c4f745908c63eb8a79961": {
+      "guid": "4b4ee8a7911c4f745908c63eb8a79961",
+      "name": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-Schoolbus-FrontBumper.prefab",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-Schoolbus-FrontBumper.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/RV-Schoolbus-FrontBumper/SnappingPlane_PartSurface",
+          "planeId": 1226458346,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "4a3838ff6febda6479b70f4e276a79e6": {
+      "guid": "4a3838ff6febda6479b70f4e276a79e6",
+      "name": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-Schoolbus-FrontDoor.prefab",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-Schoolbus-FrontDoor.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "919bc180cf2bbb241802bac839fb4221": {
+      "guid": "919bc180cf2bbb241802bac839fb4221",
+      "name": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-Schoolbus-Headlight.prefab",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-Schoolbus-Headlight.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "5a2f26b61c6d6cd4fbd14ff2604c8d32": {
+      "guid": "5a2f26b61c6d6cd4fbd14ff2604c8d32",
+      "name": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-SchoolBus-Hood.prefab",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-SchoolBus-Hood.prefab",
+      "surfaces": [
+        {
+          "kind": "surface",
+          "path": "/RV-SchoolBus-Hood/Model/RV-SchoolBus-Hood-PaintableArea",
+          "surfaceId": 853466991,
+          "material": 0
+        }
+      ],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/RV-SchoolBus-Hood/Model/Colliders/SnappingPlane_PartSurface",
+          "planeId": 3810970783,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "9c0e4c7c4bb16754ca79ed244aed888b": {
+      "guid": "9c0e4c7c4bb16754ca79ed244aed888b",
+      "name": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-Schoolbus-RearBumper.prefab",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-Schoolbus-RearBumper.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/RV-Schoolbus-RearBumper/SnappingPlane_PartSurface",
+          "planeId": 3495123847,
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "44bb1ba4928950c4f8ebad229c15533e": {
+      "guid": "44bb1ba4928950c4f8ebad229c15533e",
+      "name": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-Schoolbus-SignalLight.prefab",
+      "path": "Assets/_Project/Features/Driving/Vehicles/RV-SchoolBus/RV-Schoolbus-SignalLight.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "300aa1d85e4214f57b3aa2bf10b3f6ca": {
+      "guid": "300aa1d85e4214f57b3aa2bf10b3f6ca",
+      "name": "Battery-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Battery/Battery-1.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Battery-1/SnapSurface_Top",
+          "planeId": 2660217186,
+          "position": [
+            0.0,
+            0.07734647393226624,
+            1.1920928955078125e-07
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "1c8398d608f7d924997f7799ffa58944": {
+      "guid": "1c8398d608f7d924997f7799ffa58944",
+      "name": "Battery-2",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Battery/Battery-2.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Battery-2/SnapSurface_Top",
+          "planeId": 2660217186,
+          "position": [
+            0.0,
+            0.07734647393226624,
+            1.1920928955078125e-07
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "98fe01e1732294d4bb4ee37141afa021": {
+      "guid": "98fe01e1732294d4bb4ee37141afa021",
+      "name": "Battery-3",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Battery/Battery-3.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Battery-3/SnapSurface_Top",
+          "planeId": 2660217186,
+          "position": [
+            0.0,
+            0.07734647393226624,
+            1.1920928955078125e-07
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "333bace634c04456f9bce1e6dcef3f3c": {
+      "guid": "333bace634c04456f9bce1e6dcef3f3c",
+      "name": "Engine-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Engine/Engine-1.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "52ecabe6e4d32634086caec882b181a8": {
+      "guid": "52ecabe6e4d32634086caec882b181a8",
+      "name": "Engine-2",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Engine/Engine-2.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "5474a8205292a3f429fe630876aa365c": {
+      "guid": "5474a8205292a3f429fe630876aa365c",
+      "name": "Engine-3",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Engine/Engine-3.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "0062c118bb8c54471a3fb6780737e3f9": {
+      "guid": "0062c118bb8c54471a3fb6780737e3f9",
+      "name": "Generator-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Generator/Generator-1.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Generator-1/SnapSurface_Top",
+          "planeId": 2890912698,
+          "position": [
+            1.4901161193847656e-08,
+            0.2051515281200409,
+            1.9073486328125e-05
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "9613ae0c1b159ab43bfb9ac09ea9efea": {
+      "guid": "9613ae0c1b159ab43bfb9ac09ea9efea",
+      "name": "Handbrake-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Handbrake/Handbrake-1.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "ec5f61cc3ac86a243829eb61b60ec9eb": {
+      "guid": "ec5f61cc3ac86a243829eb61b60ec9eb",
+      "name": "Handbrake-2",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Handbrake/Handbrake-2.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "7a28d80c48434e449bc990c847ac4c4d": {
+      "guid": "7a28d80c48434e449bc990c847ac4c4d",
+      "name": "Handbrake-3",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Handbrake/Handbrake-3.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "3a1fe0300532d494aaf57a58d40b7d1e": {
+      "guid": "3a1fe0300532d494aaf57a58d40b7d1e",
+      "name": "Handbrake-4",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Handbrake/Handbrake-4.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "bdc6f56d71a12a640a2321a9a66ba547": {
+      "guid": "bdc6f56d71a12a640a2321a9a66ba547",
+      "name": "Handbrake-5",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Handbrake/Handbrake-5.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "95a3b13371ab8ed4fb9821601aeca0c7": {
+      "guid": "95a3b13371ab8ed4fb9821601aeca0c7",
+      "name": "LadderInterior-01",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/LadderInterior-01.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "2183af66f7b71144e9e8a2cf0accc954": {
+      "guid": "2183af66f7b71144e9e8a2cf0accc954",
+      "name": "Radiator-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Radiator/Radiator-1.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Radiator-1/SnapSurface_Top",
+          "planeId": 3809641062,
+          "position": [
+            0.0006729960441589355,
+            0.053182534873485565,
+            0.030473336577415466
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "7a247ad84dc84bf45b7c3ca4261614b3": {
+      "guid": "7a247ad84dc84bf45b7c3ca4261614b3",
+      "name": "Radiator-2",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Radiator/Radiator-2.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Radiator-2/SnapSurface_Top",
+          "planeId": 1338552221,
+          "position": [
+            0.0,
+            0.044333476573228836,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "d9126dfd3f42f324e9014840c3914fba": {
+      "guid": "d9126dfd3f42f324e9014840c3914fba",
+      "name": "Radiator-3",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Radiator/Radiator-3.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Radiator-3/SnapSurface_Top",
+          "planeId": 2574024135,
+          "position": [
+            0.0,
+            0.04433353245258331,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "3b26dc1ce5dae244286181c1808af3df": {
+      "guid": "3b26dc1ce5dae244286181c1808af3df",
+      "name": "VehicleSeat-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Seats/VehicleSeat-1.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "7cc49bc082d0f044fb3fe20b7fd4527e": {
+      "guid": "7cc49bc082d0f044fb3fe20b7fd4527e",
+      "name": "VehicleSeat-2",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Seats/VehicleSeat-2.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "096b80167d8a4874ab78e5e68d9b70e1": {
+      "guid": "096b80167d8a4874ab78e5e68d9b70e1",
+      "name": "Assets/_Project/Features/Driving/Vehicles/Shared/Seats/VehicleSeat-3.prefab",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Seats/VehicleSeat-3.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "29f58cdca8df5784795fa61cea5115f9": {
+      "guid": "29f58cdca8df5784795fa61cea5115f9",
+      "name": "Assets/_Project/Features/Driving/Vehicles/Shared/Seats/VehicleSeat-4.prefab",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Seats/VehicleSeat-4.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "f88199d9399db114e85324962eb897f2": {
+      "guid": "f88199d9399db114e85324962eb897f2",
+      "name": "SteeringWheel-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/SteeringWheels/SteeringWheel-1.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/SteeringWheel-1/SnapSurface_Top",
+          "planeId": 2994838458,
+          "position": [
+            0.0008813142776489258,
+            0.03225129470229149,
+            -1.430511474609375e-06
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "8990a40fba94a4b4e9a45207ac514d5b": {
+      "guid": "8990a40fba94a4b4e9a45207ac514d5b",
+      "name": "SteeringWheel-2",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/SteeringWheels/SteeringWheel-2.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/SteeringWheel-2/SnapSurface_Top",
+          "planeId": 342780041,
+          "position": [
+            -2.562999725341797e-06,
+            0.052204810082912445,
+            0.0015963613986968994
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "3590c5b2db1d0924f910514108d4044b": {
+      "guid": "3590c5b2db1d0924f910514108d4044b",
+      "name": "SteeringWheel-3",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/SteeringWheels/SteeringWheel-3.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/SteeringWheel-3/SnapSurface_Top",
+          "planeId": 3367501486,
+          "position": [
+            0.0,
+            0.01767805777490139,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "779b2675b7d9b144181c0c45e5ff21ed": {
+      "guid": "779b2675b7d9b144181c0c45e5ff21ed",
+      "name": "SteeringWheel-4",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/SteeringWheels/SteeringWheel-4.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/SteeringWheel-4/SnapSurface_Top",
+          "planeId": 1027321907,
+          "position": [
+            0.0,
+            0.015904691070318222,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "4dfbca48f8004ae4093ec2e62255796a": {
+      "guid": "4dfbca48f8004ae4093ec2e62255796a",
+      "name": "Sunvisor-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Sunvisor/Sunvisor-1.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "cd201f86e3be6744cb916139cf161f30": {
+      "guid": "cd201f86e3be6744cb916139cf161f30",
+      "name": "HighwayTire-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Tires/HighwayTire-1.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/HighwayTire-1/Model/SnappingPlane_Top",
+          "planeId": 1022497949,
+          "position": [
+            0.0,
+            0.19524968803676684,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0000000500651538
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "0b832cfc907d0e04a9e3780cca1d90ef": {
+      "guid": "0b832cfc907d0e04a9e3780cca1d90ef",
+      "name": "OffroadTire-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Tires/OffroadTire-1.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/OffroadTire-1/Model/SnappingPlane_Top",
+          "planeId": 1022497949,
+          "position": [
+            -1.460089132931941e-09,
+            0.1633453588609552,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0000000500651538
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "5bacfe73ed441194095b2eb79cf47062": {
+      "guid": "5bacfe73ed441194095b2eb79cf47062",
+      "name": "RegularTire-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Tires/RegularTire-1.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/RegularTire-1/Model/SnappingPlane_Top",
+          "planeId": 1022497949,
+          "position": [
+            -1.4600891190541532e-09,
+            0.1708217492735859,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0000000500651538
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "325ce92415c95e840ad4fa12ad8e2105": {
+      "guid": "325ce92415c95e840ad4fa12ad8e2105",
+      "name": "SandTire-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Tires/SandTire-1.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/SandTire-1/Model/SnappingPlane_Top",
+          "planeId": 1022497949,
+          "position": [
+            1.49011631922491e-08,
+            0.17409951343830957,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0000000500651538
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "1598a677ac9c44847b75846a9278f0b1": {
+      "guid": "1598a677ac9c44847b75846a9278f0b1",
+      "name": "SpareTire-1",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/Tires/SpareTire-1.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/SpareTire-1/Model/SnappingPlane_Top",
+          "planeId": 1022497949,
+          "position": [
+            2.2351744795312545e-08,
+            0.08169310147463765,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0000000500651538
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "176119854f7ea6242991dc0d4271aabf": {
+      "guid": "176119854f7ea6242991dc0d4271aabf",
+      "name": "TowKnob",
+      "path": "Assets/_Project/Features/Driving/Vehicles/Shared/TowKnob.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "eaa63e4908f34164db38d498ac404248": {
+      "guid": "eaa63e4908f34164db38d498ac404248",
+      "name": "Flashlight",
+      "path": "Assets/_Project/Features/Flashlight/Flashlight.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "886a54d1d8c56a64d91f955ab41e589b": {
+      "guid": "886a54d1d8c56a64d91f955ab41e589b",
+      "name": "BottleWater",
+      "path": "Assets/_Project/Features/LiquidDrinking/BottleWater.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/BottleWater/SnappingPlane",
+          "planeId": 2895850264,
+          "position": [
+            -0.000202178955078125,
+            0.09679999947547913,
+            0.00025177001953125
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "85e8c497cf51f7d468f2cbe8de9fe109": {
+      "guid": "85e8c497cf51f7d468f2cbe8de9fe109",
+      "name": "EnergyDrink",
+      "path": "Assets/_Project/Features/LiquidDrinking/EnergyDrink.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/EnergyDrink/SnappingPlane (1)",
+          "planeId": 3963955136,
+          "position": [
+            0.0,
+            0.17219999432563782,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "9cef6dc82794a7446b4e0fc8d34b31ed": {
+      "guid": "9cef6dc82794a7446b4e0fc8d34b31ed",
+      "name": "Milk",
+      "path": "Assets/_Project/Features/LiquidDrinking/Milk.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Milk/SnapSurface_Top",
+          "planeId": 2192334440,
+          "position": [
+            0.0,
+            0.11915049701929092,
+            3.725290298461914e-09
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "ec8b056a972c8a248996a7757b6115f4": {
+      "guid": "ec8b056a972c8a248996a7757b6115f4",
+      "name": "Bucket",
+      "path": "Assets/_Project/Features/LiquidTransferSystem/Bucket.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Bucket/CleaningSnappingPlane/SnappingPlane_Top",
+          "planeId": 1612917526,
+          "position": [
+            0.0013999938964841447,
+            0.08900000154972076,
+            -0.0022999942302704608
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "b60b3e2bffbb4f7439670bbeeddf0836": {
+      "guid": "b60b3e2bffbb4f7439670bbeeddf0836",
+      "name": "GasPumpNozzle",
+      "path": "Assets/_Project/Features/LiquidTransferSystem/GasPump/GasPumpNozzle.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "002d6fefa46be814e8f1f41691c1ec30": {
+      "guid": "002d6fefa46be814e8f1f41691c1ec30",
+      "name": "GasCan",
+      "path": "Assets/_Project/Features/LiquidTransferSystem/Jerrycan/Jerrycan.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "4db31ea20f6c11749bd187d2b425fdc5": {
+      "guid": "4db31ea20f6c11749bd187d2b425fdc5",
+      "name": "WaterCan",
+      "path": "Assets/_Project/Features/LiquidTransferSystem/WaterCan/WaterCan.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "e63e843108e6c1741af2818d08c0e0eb": {
+      "guid": "e63e843108e6c1741af2818d08c0e0eb",
+      "name": "WaterPumpReservoir",
+      "path": "Assets/_Project/Features/LiquidTransferSystem/WaterPump/WaterPumpReservoir.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "60930814797376d4c851aacbb866a65c": {
+      "guid": "60930814797376d4c851aacbb866a65c",
+      "name": "MusicPlayer",
+      "path": "Assets/_Project/Features/MusicPlayer/MusicPlayer.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "0b551ed83dfadf94b872ad3be626f019": {
+      "guid": "0b551ed83dfadf94b872ad3be626f019",
+      "name": "PlantPot",
+      "path": "Assets/_Project/Features/Planting/Prefabs/SpawnReady/PlantPot.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "c61647f07ec92b9428950f1b602cecf4": {
+      "guid": "c61647f07ec92b9428950f1b602cecf4",
+      "name": "AppleSeeds",
+      "path": "Assets/_Project/Features/Planting/Prefabs/SpawnReady/Seeds/AppleSeeds.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/AppleSeeds/SnapSurface_Top",
+          "planeId": 238829334,
+          "position": [
+            2.2351741790771484e-08,
+            0.023957541212439537,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "ea52e734d2c4d784e943118753815131": {
+      "guid": "ea52e734d2c4d784e943118753815131",
+      "name": "PotatoSeeds",
+      "path": "Assets/_Project/Features/Planting/Prefabs/SpawnReady/Seeds/PotatoSeeds.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/PotatoSeeds/SnapSurface_Top",
+          "planeId": 238829334,
+          "position": [
+            2.2351741790771484e-08,
+            0.023957541212439537,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "60ccc0e199422fc4ca1fc06522b04289": {
+      "guid": "60ccc0e199422fc4ca1fc06522b04289",
+      "name": "TomatoSeeds",
+      "path": "Assets/_Project/Features/Planting/Prefabs/SpawnReady/Seeds/TomatoSeeds.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/TomatoSeeds/SnapSurface_Top",
+          "planeId": 238829334,
+          "position": [
+            2.2351741790771484e-08,
+            0.023957541212439537,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "16d343157ee38d64ab542dc96609daa0": {
+      "guid": "16d343157ee38d64ab542dc96609daa0",
+      "name": "WatermelonSeeds",
+      "path": "Assets/_Project/Features/Planting/Prefabs/SpawnReady/Seeds/WatermelonSeeds.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/WatermelonSeeds/SnapSurface_Top",
+          "planeId": 238829334,
+          "position": [
+            2.2351741790771484e-08,
+            0.023957541212439537,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "ce56413dc3ba3094fa0cd55e74998599": {
+      "guid": "ce56413dc3ba3094fa0cd55e74998599",
+      "name": "Plate",
+      "path": "Assets/_Project/Features/Plates/Plate.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Plate/SnapSurface_Top",
+          "planeId": 4014230085,
+          "position": [
+            0.0,
+            0.010006992146372795,
+            1.1920928955078125e-07
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "3e901dde93b126e44a2f83ca063992fa": {
+      "guid": "3e901dde93b126e44a2f83ca063992fa",
+      "name": "CigarettePackage",
+      "path": "Assets/_Project/Features/Player/Smoking/CigarettePackage.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/CigarettePackage/SnapSurface_Top",
+          "planeId": 1054438893,
+          "position": [
+            0.0,
+            0.033608272671699524,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "1aef5f36519d6204f99b4a0cc990b0a5": {
+      "guid": "1aef5f36519d6204f99b4a0cc990b0a5",
+      "name": "PolaroidCamera",
+      "path": "Assets/_Project/Features/PolaroidCamera/PolaroidCamera.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "41c984347a602e04d90a1d5125d58f29": {
+      "guid": "41c984347a602e04d90a1d5125d58f29",
+      "name": "PolaroidFilmPackage",
+      "path": "Assets/_Project/Features/PolaroidCamera/PolaroidFilmPackage.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/PolaroidFilmPackage/SnapSurface_Top",
+          "planeId": 3418392994,
+          "position": [
+            -4.231929779052734e-06,
+            0.021895239129662514,
+            0.00018543004989624023
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "fdc16ff2aee972841a423f3ca4c22674": {
+      "guid": "fdc16ff2aee972841a423f3ca4c22674",
+      "name": "PolaroidPrint",
+      "path": "Assets/_Project/Features/PolaroidCamera/PolaroidPrint.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/PolaroidPrint/SnapSurface_Top",
+          "planeId": 2591116378,
+          "position": [
+            7.282570004463196e-05,
+            0.0017500000540167093,
+            -0.00047101080417633057
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "f5b5d6cf952872c4a98ea284176d253d": {
+      "guid": "f5b5d6cf952872c4a98ea284176d253d",
+      "name": "Cassette-01",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-01.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-01/SnapSurface_Top",
+          "planeId": 3988947090,
+          "position": [
+            0.0,
+            0.009311565198004246,
+            -3.725290298461914e-09
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "f7655de8597b8f144b3ccefb4a79cdf4": {
+      "guid": "f7655de8597b8f144b3ccefb4a79cdf4",
+      "name": "Cassette-02",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-02.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-02/SnapSurface_Top",
+          "planeId": 939900129,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "d95ca3ac4500a4748b50bb5f8ff37c21": {
+      "guid": "d95ca3ac4500a4748b50bb5f8ff37c21",
+      "name": "Cassette-03",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-03.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-03/SnapSurface_Top",
+          "planeId": 3126206670,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "97f57d4b8ea1a7a4e920d45ce56a292c": {
+      "guid": "97f57d4b8ea1a7a4e920d45ce56a292c",
+      "name": "Cassette-04",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-04.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-04/SnapSurface_Top",
+          "planeId": 2365603176,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "7aa66f5509735c64bb278fbcc068f002": {
+      "guid": "7aa66f5509735c64bb278fbcc068f002",
+      "name": "Cassette-05",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-05.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-05/SnapSurface_Top",
+          "planeId": 3977365074,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "3e82c3a9380cf774a95f9e37a3ef64da": {
+      "guid": "3e82c3a9380cf774a95f9e37a3ef64da",
+      "name": "Cassette-06",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-06.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-06/SnapSurface_Top",
+          "planeId": 2248297445,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "37b9a0d91533005439096abe15f97c8a": {
+      "guid": "37b9a0d91533005439096abe15f97c8a",
+      "name": "Cassette-07",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-07.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-07/SnapSurface_Top",
+          "planeId": 481724174,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "de3334f44f66f77458ee048d806e891e": {
+      "guid": "de3334f44f66f77458ee048d806e891e",
+      "name": "Cassette-08",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-08.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-08/SnapSurface_Top",
+          "planeId": 150157010,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "6ca7b56baf8fb0e4283289f6cf20ca76": {
+      "guid": "6ca7b56baf8fb0e4283289f6cf20ca76",
+      "name": "Cassette-09",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-09.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-09/SnapSurface_Top",
+          "planeId": 360688939,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "5f3f4b29043e20f46a3057f7336a719c": {
+      "guid": "5f3f4b29043e20f46a3057f7336a719c",
+      "name": "Cassette-10",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-10.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-10/SnapSurface_Top",
+          "planeId": 4090257045,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "4566e99b445532c40afd64427ccefed9": {
+      "guid": "4566e99b445532c40afd64427ccefed9",
+      "name": "Cassette-11",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-11.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-11/SnapSurface_Top",
+          "planeId": 3217154729,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "e6aade19a4fc2d847bcb9ff4e9e6ae4b": {
+      "guid": "e6aade19a4fc2d847bcb9ff4e9e6ae4b",
+      "name": "Cassette-12",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-12.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-12/SnapSurface_Top",
+          "planeId": 1918434910,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "89d522087862697409d8b02a38cd8f95": {
+      "guid": "89d522087862697409d8b02a38cd8f95",
+      "name": "Cassette-13",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-13.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-13/SnapSurface_Top",
+          "planeId": 1975614436,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "e4183a3f65705124c8eb6ab14e89457b": {
+      "guid": "e4183a3f65705124c8eb6ab14e89457b",
+      "name": "Cassette-14",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-14.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-14/SnapSurface_Top",
+          "planeId": 1821940626,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "9d4f1ba0b1f8cad4ca4175d28b570e4a": {
+      "guid": "9d4f1ba0b1f8cad4ca4175d28b570e4a",
+      "name": "Cassette-15",
+      "path": "Assets/_Project/Features/Radio/Cassettes/Cassette-15.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/Cassette-15/SnapSurface_Top",
+          "planeId": 1702904387,
+          "position": [
+            0.0,
+            0.009311558678746223,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "670cf99aff3c05c458e0010b6e8b4eeb": {
+      "guid": "670cf99aff3c05c458e0010b6e8b4eeb",
+      "name": "Radio",
+      "path": "Assets/_Project/Features/Radio/Radio.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "9fa22c4d89eacef41aa34002ef1345ac": {
+      "guid": "9fa22c4d89eacef41aa34002ef1345ac",
+      "name": "BatteryCharger",
+      "path": "Assets/_Project/Features/Repairing/BatteryCharger.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/BatteryCharger/SnapSurface_Top",
+          "planeId": 892856512,
+          "position": [
+            1.1920930376163597e-07,
+            0.12893146276474,
+            -2.980232594040899e-08
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "27030135b27da09418829fa196c91002": {
+      "guid": "27030135b27da09418829fa196c91002",
+      "name": "EngineRepairKit",
+      "path": "Assets/_Project/Features/Repairing/EngineRepairKit.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/EngineRepairKit/SnapSurface_Top",
+          "planeId": 4166971602,
+          "position": [
+            0.0,
+            0.1591072380542755,
+            0.0022513344883918762
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "518338fe6ea2a3e4f9ba12961fa2e8f2": {
+      "guid": "518338fe6ea2a3e4f9ba12961fa2e8f2",
+      "name": "TireRepairKit",
+      "path": "Assets/_Project/Features/Repairing/TireRepairKit.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/TireRepairKit/SnapSurface_Top",
+          "planeId": 2612053048,
+          "position": [
+            0.0,
+            0.14310723543167114,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "8564f696092ef1c488158cb7bdf2ad63": {
+      "guid": "8564f696092ef1c488158cb7bdf2ad63",
+      "name": "Tool-Grinder",
+      "path": "Assets/_Project/Features/Restoration/Prefabs/Networked/GrinderTool.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "38e94fb2f48ce484788201755769248a": {
+      "guid": "38e94fb2f48ce484788201755769248a",
+      "name": "PaintSpray",
+      "path": "Assets/_Project/Features/Restoration/Prefabs/Networked/Paint Spray/PaintSpray.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/PaintSpray/SnapSurface_Top",
+          "planeId": 4173990632,
+          "position": [
+            0.0,
+            0.0980980396270752,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "4556f01c33870684a8f700a4f1216ecc": {
+      "guid": "4556f01c33870684a8f700a4f1216ecc",
+      "name": "PaintSpray_Black",
+      "path": "Assets/_Project/Features/Restoration/Prefabs/Networked/Paint Spray/PaintSpray_Black.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/PaintSpray_Black/SnapSurface_Top",
+          "planeId": 4173990632,
+          "position": [
+            0.0,
+            0.0980980396270752,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "1f76c6f98278835429939a26d63ac437": {
+      "guid": "1f76c6f98278835429939a26d63ac437",
+      "name": "PaintSpray_Blue",
+      "path": "Assets/_Project/Features/Restoration/Prefabs/Networked/Paint Spray/PaintSpray_Blue.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/PaintSpray_Blue/SnapSurface_Top",
+          "planeId": 4173990632,
+          "position": [
+            0.0,
+            0.0980980396270752,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "5ab548d8c97118f40bbec1e70fc7b31a": {
+      "guid": "5ab548d8c97118f40bbec1e70fc7b31a",
+      "name": "PaintSpray_Cream",
+      "path": "Assets/_Project/Features/Restoration/Prefabs/Networked/Paint Spray/PaintSpray_Cream.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/PaintSpray_Cream/SnapSurface_Top",
+          "planeId": 4173990632,
+          "position": [
+            0.0,
+            0.0980980396270752,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "4d87aff9d0fd5754f908f6b0ac49ca53": {
+      "guid": "4d87aff9d0fd5754f908f6b0ac49ca53",
+      "name": "PaintSpray_Orange",
+      "path": "Assets/_Project/Features/Restoration/Prefabs/Networked/Paint Spray/PaintSpray_Orange.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/PaintSpray_Orange/SnapSurface_Top",
+          "planeId": 4173990632,
+          "position": [
+            0.0,
+            0.0980980396270752,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "044a359039766614bad671b809a47cb4": {
+      "guid": "044a359039766614bad671b809a47cb4",
+      "name": "PaintSpray_Purple",
+      "path": "Assets/_Project/Features/Restoration/Prefabs/Networked/Paint Spray/PaintSpray_Purple.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/PaintSpray_Purple/SnapSurface_Top",
+          "planeId": 4173990632,
+          "position": [
+            0.0,
+            0.0980980396270752,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "65911f992a5136e47b2eaa0bcff71dc2": {
+      "guid": "65911f992a5136e47b2eaa0bcff71dc2",
+      "name": "PaintSpray_Red",
+      "path": "Assets/_Project/Features/Restoration/Prefabs/Networked/Paint Spray/PaintSpray_Red.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/PaintSpray_Red/SnapSurface_Top",
+          "planeId": 4173990632,
+          "position": [
+            0.0,
+            0.0980980396270752,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "b5501af69951a2f4f8130762e8edea07": {
+      "guid": "b5501af69951a2f4f8130762e8edea07",
+      "name": "PaintSpray_Yellow",
+      "path": "Assets/_Project/Features/Restoration/Prefabs/Networked/Paint Spray/PaintSpray_Yellow.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/PaintSpray_Yellow/SnapSurface_Top",
+          "planeId": 4173990632,
+          "position": [
+            0.0,
+            0.0980980396270752,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "73f8037d5576b6e4f8c537b274d8023e": {
+      "guid": "73f8037d5576b6e4f8c537b274d8023e",
+      "name": "Tool-Polishing",
+      "path": "Assets/_Project/Features/Restoration/Prefabs/Networked/PolishTool.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "63c62eece6751984ca872777ac47f159": {
+      "guid": "63c62eece6751984ca872777ac47f159",
+      "name": "Sponge",
+      "path": "Assets/_Project/Features/Restoration/Prefabs/Networked/Sponge.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "acaf5b5c7c4f9274bb9de429b950e656": {
+      "guid": "acaf5b5c7c4f9274bb9de429b950e656",
+      "name": "ToolHanger",
+      "path": "Assets/_Project/Features/Tools/ToolHanger.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/ToolHanger/Model/ToolHangerWood/Collider/SnappingPlane_Front",
+          "planeId": 1990059649,
+          "position": [
+            -7.450580596923828e-09,
+            0.09349352866411209,
+            0.0
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "ed6d3030e3413564085646702fb515d8": {
+      "guid": "ed6d3030e3413564085646702fb515d8",
+      "name": "WoodenCrate",
+      "path": "Assets/_Project/Features/Tools/WoodenCrate.prefab",
+      "surfaces": [],
+      "planes": [
+        {
+          "kind": "plane",
+          "path": "/WoodenCrate/Model/Bottom/SnappingPlane_Top",
+          "planeId": 1265525631,
+          "position": [
+            -0.07039368152618408,
+            0.021858155727386475,
+            0.0007355213165283203
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "kind": "plane",
+          "path": "/WoodenCrate/SnapSurface_Top",
+          "planeId": 3593661540,
+          "position": [
+            -0.07054632902145386,
+            0.30175361037254333,
+            2.9802322387695312e-08
+          ],
+          "rotation": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "organicFood": false
+    },
+    "0a6eef2b68b58ce429ea04596d13f602": {
+      "guid": "0a6eef2b68b58ce429ea04596d13f602",
+      "name": "Toy-Bobblehead-01",
+      "path": "Assets/_Project/Features/Toys/Toy-Bobblehead-01.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "75fab3436afd86a489cf319a625beea5": {
+      "guid": "75fab3436afd86a489cf319a625beea5",
+      "name": "Toy-Bobblehead-02",
+      "path": "Assets/_Project/Features/Toys/Toy-Bobblehead-02.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "d199b2dfa25726946ab22e0963dd2d3e": {
+      "guid": "d199b2dfa25726946ab22e0963dd2d3e",
+      "name": "Toy-Bobblehead-03",
+      "path": "Assets/_Project/Features/Toys/Toy-Bobblehead-03.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "4aaf485486b2dd246b298bc5b124e3bf": {
+      "guid": "4aaf485486b2dd246b298bc5b124e3bf",
+      "name": "Toy-Bobblehead-04",
+      "path": "Assets/_Project/Features/Toys/Toy-Bobblehead-04.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "605ade5c3323ebb4983ea53d672ecb5c": {
+      "guid": "605ade5c3323ebb4983ea53d672ecb5c",
+      "name": "Blueprint-Ladder",
+      "path": "Assets/_Project/Features/VehicleUpgrades/Prefabs/Blueprint-Ladder.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "2f166bc823e9ea342bba764b4085d656": {
+      "guid": "2f166bc823e9ea342bba764b4085d656",
+      "name": "Blueprint-MotorcycleHolder",
+      "path": "Assets/_Project/Features/VehicleUpgrades/Prefabs/Blueprint-MotorcycleHolder.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    },
+    "a4b4dc0280901544da5cb913f7e4c715": {
+      "guid": "a4b4dc0280901544da5cb913f7e4c715",
+      "name": "Blueprint-RoofRack",
+      "path": "Assets/_Project/Features/VehicleUpgrades/Prefabs/Blueprint-RoofRack.prefab",
+      "surfaces": [],
+      "planes": [],
+      "organicFood": false
+    }
+  },
+  "oldNames": {
+    "2ebe0d040ec567047a5c5ceb0e1e0951": "Apple",
+    "78807336d37d04644ace85a375eed690": "BakedBeans",
+    "2cc16e38200cf074484da5c5bc14b622": "Banana",
+    "27294ab550ae24b40b18bf62877c9bae": "Drumstick",
+    "0b76040d2d5150340a9ae2f17f64a039": "Assets/_Project/Features/Consumables/Mushroom.prefab",
+    "435fb7fae786c4a43b1481537bed2f96": "Orange",
+    "96829d69a436fad44aee5e65c925ffba": "Potato",
+    "20b264eebb34a2547a716c2e4bacda71": "Steak",
+    "d8e9b56962c667b4b846957a3a5ecc04": "Tomato",
+    "d7b4345900ae2de41bd8f8cf11aedb8a": "TomatoSoup",
+    "b6f2197bbc459584a824907a13d11865": "TunaCan",
+    "b152f1a0545d19c46af9b7800c223878": "Watermelon",
+    "886a54d1d8c56a64d91f955ab41e589b": "BottleWater",
+    "750cb536255da369581abc906f7655ca": "CoffeePack",
+    "9cef6dc82794a7446b4e0fc8d34b31ed": "Milk",
+    "300aa1d85e4214f57b3aa2bf10b3f6ca": "Battery-1",
+    "9fa22c4d89eacef41aa34002ef1345ac": "BatteryCharger",
+    "333bace634c04456f9bce1e6dcef3f3c": "Engine-1",
+    "27030135b27da09418829fa196c91002": "EngineRepairKit",
+    "0062c118bb8c54471a3fb6780737e3f9": "Generator-1",
+    "9613ae0c1b159ab43bfb9ac09ea9efea": "Handbrake-1",
+    "0b832cfc907d0e04a9e3780cca1d90ef": "OffroadTire-1",
+    "ce56413dc3ba3094fa0cd55e74998599": "Plate",
+    "2183af66f7b71144e9e8a2cf0accc954": "Radiator-1",
+    "670cf99aff3c05c458e0010b6e8b4eeb": "Radio",
+    "5bacfe73ed441194095b2eb79cf47062": "RegularTire-1",
+    "4d383baea2f57824aa90b0dd21bc34b1": "Rv-C-Brakelight",
+    "e05151d2fc747c94a9e3b58371287d5e": "Rv-C-FrontBumper",
+    "573598e049ab517429ae4ea4d169b477": "Rv-C-Headlight",
+    "0f2235c712e8b384b9e460c834ca6da4": "Rv-C-Hood",
+    "407e4dddd161f4920a1b6d84bb71fd57": "Rv-C-MiddleDoor",
+    "0d849acdcbaaf2f48956f217318dde5c": "Rv-C-RearBumper",
+    "1eeef79f32600c44aba561bc2e84b753": "Rv-Hippie-Brakelight",
+    "19460351ca0a7c04d815bd6eda351d4c": "Rv-Hippie-DoorBase",
+    "6669218ec8037144bb445b51e32145e4": "Rv-Hippie-FrontBumper",
+    "ea7c60fa44bc49647b92a58aae6afce8": "Rv-Hippie-HeadLight",
+    "fb3441a0ffb2e2547b02e0b5ca28918c": "Rv-Hippie-Hood",
+    "20aad86e141b36847937d8f82da6535b": "Rv-Hippie-LeftDoor",
+    "2d083b20212b9f74f884705f33aad9d6": "Rv-Hippie-LeftWindshield",
+    "49e4a6b878e22214b87cce77517ce3dd": "Rv-Hippie-RearBumper",
+    "c85da905af8909c4189602b76a6b1bf4": "Rv-Hippie-RearDoor",
+    "112c542c51f1db347a3141396ca25f9f": "Rv-Hippie-RightDoor",
+    "f747927539fedcf40b6e77f17d60b393": "Rv-Hippie-RightWindshield",
+    "6960b40420a505949976c58ba0d7ac3b": "Rv-Hippie-SideDoor-1",
+    "976ac58a903716c43b437ffff8bbb765": "Rv-Hippie-SignalLight",
+    "a7537055451f9ae49a8920522cbc32bd": "Seat02",
+    "f88199d9399db114e85324962eb897f2": "SteeringWheel-1",
+    "8990a40fba94a4b4e9a45207ac514d5b": "SteeringWheel-2",
+    "4dfbca48f8004ae4093ec2e62255796a": "Sunvisor-1",
+    "518338fe6ea2a3e4f9ba12961fa2e8f2": "TireRepairKit",
+    "176119854f7ea6242991dc0d4271aabf": "TowKnob",
+    "3b26dc1ce5dae244286181c1808af3df": "VehicleSeat-1",
+    "7cc49bc082d0f044fb3fe20b7fd4527e": "VehicleSeat-2",
+    "c8d8431dab876c045b215466c5f044a3": "Compass",
+    "35454f86729404e30965a6a9bea1a043": "Crowbar",
+    "eaa63e4908f34164db38d498ac404248": "Flashlight",
+    "002d6fefa46be814e8f1f41691c1ec30": "GasCan",
+    "9e84f68ca77e2874db52bab0daf660df": "MetalDetector",
+    "30ae6cdd6eb25cd40aa8a5fed211020d": "Reviver",
+    "9e01f90a67c3d8b4290edbb8f9c54c85": "Shovel",
+    "63c62eece6751984ca872777ac47f159": "Sponge",
+    "8564f696092ef1c488158cb7bdf2ad63": "Tool-Grinder",
+    "acaf5b5c7c4f9274bb9de429b950e656": "Assets/_Project/Features/Tools/ToolHanger.prefab",
+    "73f8037d5576b6e4f8c537b274d8023e": "Tool-Polishing",
+    "4db31ea20f6c11749bd187d2b425fdc5": "WaterCan",
+    "ed6d3030e3413564085646702fb515d8": "Assets/_Project/Features/Tools/WoodenCrate.prefab",
+    "61aa1f9272cc07a50bb4ad2941f8ec2b": "CoffeeMachine",
+    "eb3e12f62a5eeb848b8223cdcdae1210": "CoffeePot",
+    "673e9376368524ddb99516018b1f23c2": "Fridge01",
+    "2f7038708798d1142907dc90af82d369": "KitchenStand01",
+    "19cce1ee5dc7df77dbdf45a3d2d43de5": "KitchenStation03",
+    "6dbd7abba4927086198613fc11ce4306": "Mug",
+    "76c54e086bfa15b46bdfc31e9b4642bc": "Pan",
+    "32a1a213c04f44b21ae164af8a13f646": "Stove01",
+    "0c1847877d9ca4a14bda2851ccc24a57": "Stove02",
+    "959c008b1491c4f50a86fe2e308b9a83": "Stove03",
+    "55fbc50fdaf7cda4796d3ebf0e5fcce6": "DinnerTable-04",
+    "fb540ffdb56eb384cb1a7d47c4510f76": "FakePlant-01",
+    "f18dd9a2548c5f240990d59d2e3fbbd3": "FakePlant-02",
+    "636238aba692cc94ca50b8ae785b2bfc": "FakePlant-03",
+    "dcac4e7f1f2f045458f91e66ac029fa9": "FakePlant-04",
+    "671da4ad9444844e596235346b5c7436": "PictureFrame",
+    "0b551ed83dfadf94b872ad3be626f019": "PlantPot",
+    "b2572439f84b5fb44bc8398dbc33aa0f": "Shelf-HouseInterior",
+    "39f621bdf9aa7e2408f0ec2049821ae8": "Sofa-01",
+    "301b7d5a5d7c85542898757f002af5d4": "Sofa-02",
+    "6e30cb5d1d6f09d46bcb6aaadc667e1e": "Sofa-03",
+    "7aa98119525c4f04496c44215c03776c": "Sofa-04",
+    "60930814797376d4c851aacbb866a65c": "MusicPlayer",
+    "1aef5f36519d6204f99b4a0cc990b0a5": "PolaroidCamera",
+    "0b648ea7d80e0fc4da4d6773d1e308e7": "Rv-C",
+    "937027af24de4f94bb9db8a8192b5d93": "Rv-Hippie",
+    "c61647f07ec92b9428950f1b602cecf4": "AppleSeeds",
+    "1cf4070384e07954d8769ec53663573e": "Assets/_Project/Features/Furnitures/Prefabs/_SpawnReady/BicycleHolder.prefab",
+    "ec8b056a972c8a248996a7757b6115f4": "Bucket",
+    "5c23aa1ee79bab945afd020399d8458d": "Chair",
+    "3aa61d6643d20ce49b6cbdfd2c8f0f87": "Chest-01",
+    "82d10f3299b7cd74dafb0f8e7c8397c1": "Chest-02",
+    "7ac7919496511334e8a8246200b0083e": "ConsumableBattery",
+    "d2b8833d702b927489e739d3e4c25808": "DinnerSeat-02",
+    "cbb9a255f862e7f49bf4e8ea1edd2bea": "DinnerSeat-04",
+    "c510c6ca10ea66145915b42a601a3ab3": "DinnerTable-02",
+    "084ad44d712254c46b20e293739dbb64": "DinnerTable-03",
+    "382f776882d34de4eab3fb57a8bd3f08": "DinnerTable-05",
+    "bcc1c70183a3cd449b74498a30871b31": "FirstAidKit",
+    "b60b3e2bffbb4f7439670bbeeddf0836": "GasPumpNozzle",
+    "9c6d464babff6a04baff2f2df96c7d45": "Key",
+    "fbcc2a5eaabf3fb43a467fee85e8efa8": "Key-02",
+    "eb681252bbb040a4793765c4076ca823": "Kitchen_01_Cabinet_02",
+    "b92b45eccd52a3a48ae3b1a587df4d3a": "Kitchen_01_Cabinet_03",
+    "0b71162661c059d40bb11a84639190d4": "Kitchen_1_TopCabinet_03",
+    "9400b5d610d24fd4599dfca4b4b12a38": "Kitchen-01-TopCabinet-01",
+    "543e4a8921adb7648a5b6584a3c7e42e": "KitchenCabinet-04",
+    "26d66abeb1677bd4c89a53282ddf884c": "KitchenTopCabinet-04",
+    "95a3b13371ab8ed4fb9821601aeca0c7": "LadderInterior-01",
+    "4556f01c33870684a8f700a4f1216ecc": "PaintSpray_Black",
+    "1f76c6f98278835429939a26d63ac437": "PaintSpray_Blue",
+    "5ab548d8c97118f40bbec1e70fc7b31a": "PaintSpray_Cream",
+    "4d87aff9d0fd5754f908f6b0ac49ca53": "PaintSpray_Orange",
+    "044a359039766614bad671b809a47cb4": "PaintSpray_Purple",
+    "65911f992a5136e47b2eaa0bcff71dc2": "PaintSpray_Red",
+    "b5501af69951a2f4f8130762e8edea07": "PaintSpray_Yellow",
+    "2f5034b7d86ff8547bdc272c7bc148bf": "Pills",
+    "41c984347a602e04d90a1d5125d58f29": "PolaroidFilmPackage",
+    "fdc16ff2aee972841a423f3ca4c22674": "PolaroidPrint",
+    "ea52e734d2c4d784e943118753815131": "PotatoSeeds",
+    "09fc9efe49dfc7740bdf5cbf1a6c6148": "Rv-C-LeftDoor",
+    "7de8a3f07669fe2478c357392366f12f": "Rv-C-RightDoor",
+    "60ccc0e199422fc4ca1fc06522b04289": "TomatoSeeds",
+    "16d343157ee38d64ab542dc96609daa0": "WatermelonSeeds",
+    "fc3179c8e6bc0214d9fdd92cf7bbdfd7": "WC-01"
+  },
+  "replacements": {
+    "2cc16e38200cf074484da5c5bc14b622": "2ebe0d040ec567047a5c5ceb0e1e0951",
+    "20b264eebb34a2547a716c2e4bacda71": "27294ab550ae24b40b18bf62877c9bae",
+    "b6f2197bbc459584a824907a13d11865": "78807336d37d04644ace85a375eed690",
+    "0b832cfc907d0e04a9e3780cca1d90ef": "5bacfe73ed441194095b2eb79cf47062",
+    "8990a40fba94a4b4e9a45207ac514d5b": "f88199d9399db114e85324962eb897f2",
+    "19cce1ee5dc7df77dbdf45a3d2d43de5": "2f7038708798d1142907dc90af82d369",
+    "0c1847877d9ca4a14bda2851ccc24a57": "32a1a213c04f44b21ae164af8a13f646",
+    "959c008b1491c4f50a86fe2e308b9a83": "32a1a213c04f44b21ae164af8a13f646",
+    "55fbc50fdaf7cda4796d3ebf0e5fcce6": "ed4f5a193a79c824d80290e32591d4a4",
+    "f18dd9a2548c5f240990d59d2e3fbbd3": "fb540ffdb56eb384cb1a7d47c4510f76",
+    "636238aba692cc94ca50b8ae785b2bfc": "fb540ffdb56eb384cb1a7d47c4510f76",
+    "dcac4e7f1f2f045458f91e66ac029fa9": "fb540ffdb56eb384cb1a7d47c4510f76",
+    "b2572439f84b5fb44bc8398dbc33aa0f": "4038624ba7f467147a09fe06aa50c71b",
+    "301b7d5a5d7c85542898757f002af5d4": "39f621bdf9aa7e2408f0ec2049821ae8",
+    "6e30cb5d1d6f09d46bcb6aaadc667e1e": "39f621bdf9aa7e2408f0ec2049821ae8",
+    "7aa98119525c4f04496c44215c03776c": "39f621bdf9aa7e2408f0ec2049821ae8",
+    "82d10f3299b7cd74dafb0f8e7c8397c1": "3aa61d6643d20ce49b6cbdfd2c8f0f87",
+    "d2b8833d702b927489e739d3e4c25808": "5c23aa1ee79bab945afd020399d8458d",
+    "cbb9a255f862e7f49bf4e8ea1edd2bea": "5c23aa1ee79bab945afd020399d8458d",
+    "c510c6ca10ea66145915b42a601a3ab3": "ed4f5a193a79c824d80290e32591d4a4",
+    "084ad44d712254c46b20e293739dbb64": "ed4f5a193a79c824d80290e32591d4a4",
+    "382f776882d34de4eab3fb57a8bd3f08": "ed4f5a193a79c824d80290e32591d4a4",
+    "fbcc2a5eaabf3fb43a467fee85e8efa8": "9c6d464babff6a04baff2f2df96c7d45",
+    "b92b45eccd52a3a48ae3b1a587df4d3a": "eb681252bbb040a4793765c4076ca823",
+    "0b71162661c059d40bb11a84639190d4": "9400b5d610d24fd4599dfca4b4b12a38",
+    "543e4a8921adb7648a5b6584a3c7e42e": "eb681252bbb040a4793765c4076ca823",
+    "26d66abeb1677bd4c89a53282ddf884c": "9400b5d610d24fd4599dfca4b4b12a38",
+    "ea52e734d2c4d784e943118753815131": "60ccc0e199422fc4ca1fc06522b04289"
+  },
+  "plantPhases": {
+    "2": [
+      15.0,
+      15.0,
+      15.0,
+      15.0,
+      15.0
+    ],
+    "1": [
+      15.0,
+      15.0,
+      15.0,
+      15.0,
+      15.0
+    ],
+    "4": [
+      15.0,
+      15.0,
+      15.0,
+      15.0,
+      15.0
+    ],
+    "3": [
+      15.0,
+      15.0,
+      15.0,
+      15.0,
+      15.0
+    ]
+  },
+  "notes": {
+    "surfaces": "Old ordinal surfaces mapped to current prefab depth-first hierarchy. Multi-surface mapping is provisional; original PNGs are archived. Rv-Hippie lost one surface.",
+    "planes": "Uses saved world pose and current prefab plane frames. Old plane indices are not reused."
+  },
+  "edition": "EarlyAccess",
+  "gameDataDirectory": "Nomad Drive_Data"
+}

@@ -1,22 +1,19 @@
-# Nomad Drive Save Converter v1.3.0
+# 2.0.0
 
-Author: **robinhugy**
+By **robinhugy**
 
-The save converter now runs directly as a single .NET Framework Windows application. The Python runtime, PyInstaller package, embedded executable engine, runtime extraction cache and converter subprocess have been removed from the release.
+- Move selected legacy or current-format Demo worlds to Nomad Drive Early Access 1.0.
+- Search both current-user save profiles; choose individual worlds, actions and player limits.
+- Enable multiplayer only on checked worlds, or set each selected world's cap from 1 to 8.
+- Decrease caps while retaining every saved player profile and inventory.
+- Read-only startup and previews: creating copies requires the explicit action button.
+- Preserve current-format save bytes when no mode change is requested; keep progress, objects, paint and sidecars.
+- Back up selected sources, create separate `(converted)` slots and refuse stale previews or unsupported targets.
+- Retain optional legacy floating-loot cleanup and the motorhome/floppy icon.
+- One standalone .NET Framework 4.8 EXE; author and application text remain English.
 
-- Keeps the English interface, motorhome-and-floppy icon and automatic save/game discovery.
-- Keeps backup copies, separate `(converted)` slots, item replacement reports, multiplayer repair and optional old-loot cleanup.
-- Preserves compatibility checks and complete save/manifest read-back verification.
-- Defers closing the window until the active operation finishes.
-- Resolves redirected filesystem paths before checking source/destination boundaries.
-- Builds without third-party Python packages. Python is used only for tests and source packaging, including independent decoded-save comparisons.
+Validation: legacy regression suite, 53 independent decoded-save comparisons, 21 selection cases, interface checks, and 10 real-world copies accepted by the full game's native save/manifest readers. Seven current-format worlds were copied byte for byte. In-game load/save/reload remains a separate check.
 
-**Antivirus status:** earlier packaged releases received detections. This release removes their embedded executable architecture, but has not received a vendor verdict. A fresh scan must refer to this EXE's exact SHA-256. No claim of confirmed false positives or zero detections is made.
+Antivirus status: earlier releases received detections. Use a VirusTotal report matching this release's exact EXE and SHA-256; older reports refer to different files.
 
-Compatibility: legacy format **5** to **16**, inspected Steam build **26274244**. Already converted worlds do not require another conversion for this release. Automatic conversion leaves suitable existing worlds alone; optional cleanup remains off by default.
-
-Save and close the game before converting. Original slots are backed up and never overwritten. Load the newest `(converted)` copy afterward. Backups: `%LOCALAPPDATA%\NomadDriveSaveConverter\Backups`.
-
-Known world-generation, multi-surface paint and legacy quest/odometer limitations remain; see README. File checks do not replace an in-game load/save/reload check.
-
-The **win-x64 EXE** is the standalone application. The **win-x64 ZIP** contains that same EXE plus documentation, license notices and checksums. Source archives contain the complete buildable source. `SHA256SUMS.txt` identifies the release assets.
+Close the game before creating copies. Load the new `(converted)` world afterward. Original saves remain unchanged. See README for compatibility, backup locations and world-generation limitations.

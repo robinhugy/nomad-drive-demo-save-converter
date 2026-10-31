@@ -23,9 +23,10 @@ namespace NomadSave
     internal static class SaveOperations
     {
         internal static readonly string DefaultSaves = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "AppData", "LocalLow", "Indie Devil", "Nomad Drive Demo", "EvilSave");
+        internal static readonly string DefaultEarlyAccessSaves = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "AppData", "LocalLow", "Indie Devil", "Nomad Drive", "EvilSave");
         internal static readonly string DefaultBackups = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "NomadDriveSaveConverter", "Backups");
         internal static readonly UTF8Encoding Utf8 = new UTF8Encoding(false), Utf8Bom = new UTF8Encoding(true);
-        internal static string DiscoverGame()
+        internal static string DiscoverGame(bool earlyAccess = false)
         {
             var roots = new List<string>();
             foreach (var spec in new[] {
@@ -49,17 +50,17 @@ namespace NomadSave
             }
             foreach (string library in libraries.Distinct(StringComparer.OrdinalIgnoreCase))
             {
-                string candidate = Path.Combine(library, "steamapps", "common", "Nomad Drive Demo");
-                if (File.Exists(Catalog(candidate))) return candidate;
+                string candidate = Path.Combine(library, "steamapps", "common", earlyAccess ? "Nomad Drive" : "Nomad Drive Demo");
+                if (File.Exists(Catalog(candidate, earlyAccess ? "Nomad Drive_Data" : "Nomad Drive Demo_Data"))) return candidate;
             }
             return null;
         }
-        static string Catalog(string game) { return Path.Combine(game, "Nomad Drive Demo_Data", "StreamingAssets", "aa", "catalog.bin"); }
+        static string Catalog(string game, string dataDirectory) { return Path.Combine(game, dataDirectory, "StreamingAssets", "aa", "catalog.bin"); }
         internal static void VerifyBuild(string game, Mapping mapping)
         {
-            if (string.IsNullOrWhiteSpace(game)) game = DiscoverGame();
-            if (game == null) throw new ConversionError("Game folder not found. Choose the Nomad Drive Demo installation folder.");
-            string catalog = Catalog(game); if (!File.Exists(catalog)) throw new ConversionError("Invalid game folder: catalog.bin was not found.");
+            if (string.IsNullOrWhiteSpace(game)) game = DiscoverGame(mapping.Edition == "EarlyAccess");
+            if (game == null) throw new ConversionError("Game folder not found. Choose the target Nomad Drive installation folder.");
+            string catalog = Catalog(game, mapping.GameDataDirectory); if (!File.Exists(catalog)) throw new ConversionError("Invalid game folder: catalog.bin was not found.");
             if (SaveFormat.Sha(File.ReadAllBytes(catalog)) != mapping.CatalogSha256) throw new ConversionError("This game build is not supported. The converter needs an updated compatibility mapping.");
         }
         internal static bool GameRunning()
@@ -147,13 +148,20 @@ namespace NomadSave
             for (var current = new DirectoryInfo(Path.GetFullPath(path)); current != null; current = current.Parent)
                 if (current.Exists && (current.Attributes & FileAttributes.ReparsePoint) != 0) throw new ConversionError("For write safety, select a save and backup folder without symbolic links or directory junctions.");
         }
+        internal static void ValidateDestinations(string sourceSlot, string root, string archive)
+        {
+            RejectReparseAncestors(root); RejectReparseAncestors(archive); RejectReparseAncestors(sourceSlot);
+            if (Inside(root, sourceSlot)) throw new ConversionError("The new slot cannot be created inside the original slot.");
+            if (Inside(archive, sourceSlot)) throw new ConversionError("The backup cannot be created inside the original slot.");
+        }
         static void WriteNew(string path, byte[] data)
         { using (var output = new FileStream(path, FileMode.CreateNew, FileAccess.Write, FileShare.None)) { output.Write(data, 0, data.Length); output.Flush(true); } }
-        internal static Dictionary<string, object> ConvertSlot(string source, string outputRoot, string backupRoot, Mapping mapping, string game, bool replace, string displayName, int? playerSlots, bool repair, bool cleanup, string legacySource = null)
+        internal static Dictionary<string, object> ConvertSlot(string source, string outputRoot, string backupRoot, Mapping mapping, string game, bool replace, string displayName, int? playerSlots, bool repair, bool cleanup, string legacySource = null, Conversion prepared = null)
         {
             VerifyBuild(game, mapping); if (GameRunning()) throw new ConversionError("Close the game before converting saves.");
             string src = SourceFile(source), sourceSlot = Path.GetDirectoryName(src); byte[] data = ReadSave(src); var meta = ReadMeta(sourceSlot);
-            var conversion = repair ? ConverterCore.Repair(data, mapping, playerSlots) : ConverterCore.Transform(data, mapping, replace, playerSlots);
+            if (prepared != null && Json.S(prepared.Report, "sourceSha256") != SaveFormat.Sha(data)) throw new ConversionError("The source changed after preview. Refresh the list and preview again.");
+            var conversion = prepared ?? (repair ? ConverterCore.Repair(data, mapping, playerSlots) : ConverterCore.Transform(data, mapping, replace, playerSlots));
             if (cleanup) conversion = LootCleanup.Apply(src, conversion, mapping, backupRoot, legacySource);
             string root = CanonicalPath(outputRoot), archive = CanonicalPath(backupRoot);
             if (!Directory.Exists(root)) throw new ConversionError("The destination save folder does not exist.");
@@ -181,7 +189,7 @@ namespace NomadSave
             }
             report["originalSourceSha256"] = lineage; var newMeta = new Dictionary<string, object>(meta);
             foreach (var field in Json.D("slotId", slotId, "displayName", name, "saveVersion", 1, "createdAt", Json.Get(meta, "createdAt", now), "lastSavedAt", now, "playtimeSeconds", Json.Get(meta, "playtimeSeconds", 0),
-                "generation", 1, "contentFile", "save.dat", "contentHash", SaveFormat.Sha(conversion.Output), "contentSize", conversion.Output.Length, "contentFormatVersion", 16, "buildVersion", "converter-" + BuildInfo.Version + " / Steam-" + mapping.Build, "deviceId", "", "cloudAccount", "")) newMeta[field.Key] = field.Value;
+                "generation", 1, "contentFile", "save.dat", "contentHash", SaveFormat.Sha(conversion.Output), "contentSize", conversion.Output.Length, "contentFormatVersion", 16, "buildVersion", "converter-" + BuildInfo.Version + " / " + mapping.Build, "deviceId", "", "cloudAccount", "")) newMeta[field.Key] = field.Value;
             string staging = Path.Combine(root, ".converter_" + Guid.NewGuid().ToString("N")); Directory.CreateDirectory(staging);
             try
             {

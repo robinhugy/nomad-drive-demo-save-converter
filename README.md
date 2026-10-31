@@ -1,133 +1,115 @@
-# Nomad Drive Demo/Early Access - Save Converter
+# Nomad Drive Save Converter
 
-An unofficial Windows tool that converts legacy **Nomad Drive Demo** and **Nomad Drive Early Access** worlds to the updated save format and fixes the saved player limit that can block multiplayer.
+Version **2.0.0** · Windows 10/11 x64 · .NET Framework 4.8
 
-### Compatibility verification — 31 October 2026
-Verified compatibility with the current Early Access 1.0 (build:26243889).
+An unofficial tool for moving **Nomad Drive Demo** saves to **Nomad Drive Early Access**, enabling multiplayer, or changing the player limit on selected worlds. The application and reports are in English.
 
-**Run the EXE: it finds your saves, makes backups and converts all eligible worlds automatically.** New worlds are named **`(converted)`**. Existing slots are never overwritten.
+**Opening the app only lists saves. Nothing is selected or converted automatically.** Each completed operation creates a separate world named **`(converted)`** and backs up its source. Existing worlds are never overwritten.
 
-The app and its reports are in English.
+## Quick start
 
-## Download and run
+1. Save and close the game. Run `NomadDriveSaveConverter-v2.0.0-win-x64.exe` from any writable folder, or extract the release ZIP and run its EXE.
+2. Click **Find / refresh saves**. The default source searches both the Demo and Early Access profiles of your current Windows account. Use the source selector or **Browse** for another folder.
+3. Check only the worlds you want to process. Prefer your latest played `(converted)` world over its old original if you have continued playing.
+4. Choose an **Action** for each checked row. You can also set an action for all checked worlds using **For checked worlds** and **Set action**.
+5. Check **Destination saves** and **Early Access game**. Steam libraries are searched automatically; use **Browse** for a custom installation.
+6. Click **Preview selected** and read the report. Click **Back up and create copies** to commit those selections.
+7. Start Early Access and load the new `(converted)` entries. Keep the original worlds until you have checked loading, saving and reloading the copies.
 
-1. Download **`NomadDriveSaveConverter-v1.3.0-win-x64.exe`** from the repository's **Releases** section, or extract the Windows release ZIP.
-2. Save and close the game, then run the EXE from a writable folder.
-3. The app detects the save folder and Steam libraries, creates backups, and processes all eligible worlds. Read its completion report.
-4. Start the game and select the newest **`(converted)`** entries in **Load Game**.
+The program is one standalone EXE. It runs directly on .NET Framework 4.8 without an embedded interpreter, executable engine or extracted runtime. Its icon includes a motorhome and a floppy disk. License text is available through **Licenses**.
 
-Version 1.3 runs the conversion code directly inside one Windows EXE using .NET Framework 4.8. It does not bundle a Python runtime, extract an executable engine or start a converter subprocess. Windows 10/11 x64 is supported. License texts are available through **Licenses**.
+## Actions and player limits
 
-If the game is open, writing stops until you close it and click **Back up and convert all**. If detection cannot find an unusual installation, use **Browse**. Clicking a world also gives access to a single-world preview, custom name and player limit.
-
-## Supported game version
-
-| Item | Supported value |
+| Action | Result |
 | --- | --- |
-| Game | Nomad Drive Demo |
-| Legacy world format | 5 |
-| Target world format | 16 |
-| Inspected Steam build | 26274244 |
-| Current-format action | Multiplayer repair and opt-in legacy-loot cleanup in a separate copy |
+| Copy to Early Access | Migrates the selected world and keeps its current single-player / multiplayer mode and limit. Legacy format-5 limits are inferred from saved player profiles. |
+| Enable multiplayer | Uses at least 2 player slots; retains an existing higher limit. |
+| Set player limit | Uses the row's **New limit**, from 1 to 8. 1 is single-player; 2–8 is multiplayer. Supports increasing and decreasing the limit. |
 
-Version 1.3.0 retains the motorhome-and-floppy application icon and supports the 28 October 2026 update. Existing format-16 worlds do not need reconversion solely for this update.
+The **New limit** control is editable only for **Set player limit**. Unchecked rows are ignored. You may choose different actions and limits in the same batch.
 
-The app checks the installed game's catalog fingerprint before processing saves. Other game updates need an updated compatibility mapping; changing the fingerprint alone is not sufficient.
+Reducing the simultaneous player limit **retains all saved player profiles, inventories and progress**. It does not delete old player records. For a current-format save, only the player-limit byte in the manifest changes; objects, paint images, sidecars and resource density settings are preserved. The game's connection and service limits still apply.
 
-## Automatic processing
+## Compatibility
 
-- Finds saves in the current Windows user's `AppData\LocalLow\Indie Devil\Nomad Drive Demo\EvilSave` folder. It reads Steam's configured libraries to locate the game.
-- Uses the newest `save.dat` or `autosave.dat` for each world. Historical files in a world's `backup` folder are not turned into extra worlds.
-- Backs up the selected source file, slot metadata and thumbnail before committing a new slot.
-- Converts all supported legacy worlds, including multiplayer player records and vehicle attachment links.
-- Matches original-file fingerprints to their converted descendants. Repeated runs skip suitable results instead of creating duplicates.
-- If an older converter result needs multiplayer repair, uses its most recently saved state rather than recreating the world from the old source.
-- Leaves native format-16 worlds without a converter report alone. A selected format-16 world can be repaired manually in a new copy.
-- Reports damaged or unsupported saves individually and continues with other eligible worlds.
+| Item | Supported target |
+| --- | --- |
+| Game | Nomad Drive Early Access 1.0, inspected 31 October 2026 |
+| Source formats | Legacy Demo format 5; current Demo / Early Access format 16 |
+| Target format | 16 |
+| Target prefab mapping | 230 assets; all 112 assets supported by the previous Demo converter remain compatible |
+| Target catalog SHA-256 | `5233ae1c25e7e5f5b9d68514bcfe6e3bd56bc5bd6e2251724ef8acf291cdcd1b` |
 
-The app does not search other Windows users' profiles or scan every file on every drive.
+The installed target catalog must match the inspected mapping. A changed catalog requires a compatibility review and updated mapping; changing the fingerprint alone is insufficient. Current-format worlds containing unknown target assets are refused rather than silently stripped.
 
-### Multiplayer
+Current-format migration with no mode change preserves the source save file byte for byte. Legacy format-5 conversion transfers supported objects, players, attachment links and paint; removed items can be replaced with similar assets when available, otherwise they are omitted and listed. Assets restored in Early Access are retained directly.
 
-The updated game stores a player limit in the world settings. A value of `1` makes the game refuse **Activate Multiplayer**, even when remote player records survived conversion.
+Terrain and buildings are regenerated by the game. Legacy quest/global odometer state is archived and new systems may use defaults. Old paint aging is unavailable; legacy multi-surface paint needs an in-game visual check. File validation cannot establish complete in-game behavior.
 
-**Auto (multiplayer)** selects at least two player slots and enough slots for the host plus saved remote players, up to eight. Existing higher limits are retained during repair. You can choose a different limit in **Player slots**; the app rejects a limit smaller than the saved player count. The game's own connection limit still applies.
+## Optional floating-loot cleanup
 
-Current-format repair changes only the player-limit byte in the world manifest. Object state, player progress, paint images and resource density settings remain unchanged. Repair creates a copy and a backup.
+A changed map generator can leave imported building loot floating at old coordinates. **Clean old imported world loot** is off by default. It requires the exact legacy format-5 source, found through conversion lineage or the backup folder. Without reliable provenance, cleanup stops before writing.
 
-### Floating legacy loot after changed world generation
+Cleanup protects vehicles, attached parts, linked cargo, player equipment, worn backpacks and their contents, newly created objects, and imported items demonstrably moved after conversion. Other loose imported objects and linked ground stashes can be removed. Read the preview before enabling it. Already cleaned worlds keep their cleanup lineage when copied to Early Access.
 
-The updated game regenerates terrain and buildings differently. A full conversion can leave old building loot floating at the original coordinates. Version 1.2 adds an **optional** cleanup; it is **off by default** because the old format cannot reliably distinguish untouched loot from intentional ground stashes.
+## Locations and backups
 
-1. Save and close the game. Select the latest converted world, rather than the original if you have continued playing.
-2. Enable **Clean old world loot**. Read the preview's removal counts, item list and limitations.
-3. Click **Create cleaned copy**, or use **Back up and convert all** to clean the latest converted descendant of each legacy world. Load the newest `(converted)` entry afterward.
+Standard paths under `%USERPROFILE%\AppData\LocalLow\Indie Devil`:
 
-Cleanup preserves all vehicles, linked parts and cargo, host/remote held and hotbar items, worn backpacks and their contents, all objects created after conversion, and imported objects moved over one metre since the original save. Linked objects are kept together. It removes the remaining imported loose components, **including ground stashes and their contents**. Do not use this mode if those stashes must survive.
+- Demo: `Nomad Drive Demo\EvilSave`
+- Early Access: `Nomad Drive\EvilSave`
 
-Old-generation loot reservations are reset, while new reservations and live native loot markers are retained. This lets the updated world spawn loot at its own locations; previously cleared locations can receive new loot. Protected objects or old objects already moved by physics may remain floating. This is a conservative migration cleanup, not a perfect detector of airborne objects, and it does not recreate old buildings.
+Backups: `%LOCALAPPDATA%\NomadDriveSaveConverter\Backups`.
 
-For an existing conversion, the exact format-5 original must still exist in a sibling slot or the converter's backup folder. Its SHA-256 must match the conversion report. The developer CLI also accepts `--legacy-source`. If the original is missing or a link schema is unsupported, cleanup stops. Native format-16 worlds without converter lineage are never swept. The latest save/autosave is used; kept records, player progress and sidecar images are preserved.
+The app uses the newest `save.dat` or `autosave.dat` in each selected slot. It backs up that source, metadata, thumbnail and existing conversion reports before committing a new slot. Reports (`conversion-report.json`, `CONVERSION_REPORT.txt`) are stored beside each result. Historical backup files are not listed as extra worlds. It does not search other Windows accounts or scan entire drives.
 
-Cleanup is recorded in each new slot's report, including every removed GUID, item name and position. Repeating a batch with cleanup enabled skips already-cleaned results. Ordinary startup conversion still leaves all transferable objects in place.
-
-### Backups and reports
-
-Backups: `%LOCALAPPDATA%\NomadDriveSaveConverter\Backups`
-
-Each new world contains `CONVERSION_REPORT.txt` and `conversion-report.json`, including replacements, omissions, player slots and verification results. Batch reports are stored with the backups when worlds are created. All processing is local; the app has no upload or telemetry feature.
-
-## What is preserved
-
-World seed and time, player poses and survival state, supported objects and their identifiers, vehicle attachment links, component condition, liquids, food, plants, and compatible restoration images are carried over. Known optional trainer state is retained when present; the trainer itself is not included or required for ordinary saves.
-
-Removed assets can be replaced with explicit alternatives, such as an off-road tire with a regular tire. Unavailable assets without a replacement are omitted and listed. Turn off **Replace removed items** to omit all removed assets instead.
-
-## Known limitations
-
-- Earlier packaged releases received antivirus detections, including a COMODO report for their embedded engine. Version 1.3.0 replaces that architecture with direct .NET code and includes no executable engine or Python runtime. This is not an antivirus approval; the new EXE needs its own scan and no vendor verdict has been obtained. Publish the report for the exact release hash.
-
-- Updated terrain, buildings and model dimensions can differ at the old coordinates. Inspect the converted world, save, exit, and reload it before continuing a long session.
-- Placed objects are linked to a current plane on the same container while retaining their saved world pose. Moving supports and changed models may need manual adjustment.
-- Paint mapping for multi-surface bodies follows the current prefab hierarchy and is provisional. One old RV-Hippie surface no longer exists. Unmapped image bytes remain in the original backup and archived sidecars.
-- Legacy quests and the old shared odometer are archived; the new quest and per-vehicle odometer systems start from defaults. Old paint aging is no longer supported. New hotbar/backpack fields begin empty.
-- The compatibility check targets one inspected Steam build. This is not a general save editor or a guarantee for future updates.
-
-Version 1.3.0 was checked with the actual game's envelope and manifest readers on conversions and cleaned copies of three legacy worlds, in addition to the synthetic regression tests and independent decoded-save comparisons. Initial in-game loading and multiplayer activation were reported working with the earlier engine. The rewritten version still needs an in-game load/save/reload check; these file checks do not test every item or multiplayer combination.
+All selections are preflighted before creating destinations. A save changed since listing/preview is refused; refresh and preview again. Each output is staged, reparsed and verified before installation. Source files remain unchanged. If a later write fails in a multi-world batch, already completed new copies remain and the report identifies failures. Running a selected action again deliberately creates another separate copy.
 
 ## Build and test
 
-The Windows executable is compiled from C# with the .NET Framework compiler supplied by Windows. Python 3.11+ is used only for build verification, the independent reference implementation and source packaging; it is not included in the release. No third-party Python packages or game assemblies are needed. The test build reruns the established regression cases against the C# engine and compares decoded results with the Python reference.
+Requires Windows, .NET Framework 4.8 and Python 3.11 for tests and source packaging. No third-party Python packages are needed.
 
 ```powershell
-python -m unittest discover -s tests -v
-powershell -ExecutionPolicy Bypass -File scripts\build.ps1 -Python python
+.\scripts\build.ps1 -Python python
 ```
 
-Build outputs are placed in `dist/`:
+`dist` contains the standalone EXE, a ZIP with documentation/licenses/checksums, and a complete source archive. The build runs 61 Python reference cases, the same 61 cases against the native C# implementation with 53 independent decoded-save comparisons, and 21 selected-operation cases. Tests use synthetic worlds and temporary folders; no game files or personal saves are required.
 
-- Standalone Windows EXE.
-- Release ZIP containing the EXE, README, release notes, license texts and checksums.
-- `SHA256SUMS.txt` for the release assets.
+The shipping C# implementation is under `src/engine/*.cs` and `src/gui`. The Python engine is a legacy-format reference used by regression tests; the current selection workflow is implemented in C#. `early-access.json` is the Early Access mapping; `mapping.json` retains the older Demo mapping for legacy command-line compatibility and regression tests.
 
-The build script compiles the conversion code into the final EXE and embeds the compatibility mapping, application icon and license notices. No other executable is embedded. It never copies game files or personal saves into a release. The GitHub Actions workflow runs the same synthetic tests and Windows build, then provides downloadable build artifacts; publishing a GitHub Release remains a manual step.
-
-### Developer CLI
+### Selected command-line operations
 
 ```powershell
-.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --list
-.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --batch
-.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --preview --source "PATH_TO_SLOT"
-.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --convert --source "PATH_TO_SLOT" --players 4
-.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --repair-multiplayer --source "PATH_TO_SLOT" --players 4
-.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --preview --source "PATH_TO_CONVERTED_SLOT" --clean-legacy-loot
-.\NomadDriveSaveConverter-v1.3.0-win-x64.exe --batch --clean-legacy-loot
+NomadDriveSaveConverter.exe --preview-plan --plan plan.json --report preview.json
+NomadDriveSaveConverter.exe --apply-plan --plan plan.json --report result.json
 ```
 
-Use `--game`, `--output-root`, `--backup-root` or `--report` for explicit paths. The EXE accepts the same arguments as the optional Python reference CLI; use `--report result.json` to retrieve output from the windowed executable. It runs conversions in process. Closing the window is deferred while an operation is active.
+Example `plan.json` (replace the paths and fingerprint with your own):
 
-## Repository contents
+```json
+{
+  "game": "D:\\Games\\Nomad Drive",
+  "outputRoot": "D:\\SaveCopies",
+  "backupRoot": "D:\\SaveBackups",
+  "replaceMissing": true,
+  "cleanLegacyLoot": false,
+  "selections": [
+    {
+      "source": "D:\\DemoSaves\\slot_example",
+      "expectedSha256": "SHA-256 of the newest save.dat or autosave.dat",
+      "action": "players",
+      "players": 4
+    }
+  ]
+}
+```
 
-`src/engine/*.cs` contains the production .NET save parser, conversion/repair logic, cleanup and safe file operations. The Python files provide the independent reference implementation for tests. `src/gui` contains the English Windows Forms interface. `src/gui/assets` contains the PNG master and the multi-resolution Windows icon, embedded into the EXE and application window. `tests` uses synthetic worlds and a separately compiled native test harness. The test-only process-check override is excluded from the production build. `scripts/build.ps1` builds and verifies the release.
+Actions: `migrate`, `multiplayer`, `players`. `players` is required only for the last action. Use the GUI to avoid preparing a plan manually. Older Demo CLI modes remain available; `--batch` retains its old all-world behavior and is never called automatically by the GUI.
 
-Application code and documentation are under the [MIT license](LICENSE). Runtime component license texts are included in releases and accessible in the EXE. Game names and compatibility identifiers belong to their respective owners. This project is not affiliated with the game developer and distributes no game assemblies, game media, or personal saves.
+## Antivirus status
+
+Earlier releases received antivirus detections. This release uses a direct .NET executable. Any VirusTotal report should be linked to the exact release file and its SHA-256; reports for earlier versions describe different files. Checksums are included with the release.
+
+## License
+
+MIT; see `LICENSE`. Unofficial community tool, not affiliated with the game's developer. Game names and artwork belong to their respective owners.
