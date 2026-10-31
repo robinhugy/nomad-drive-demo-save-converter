@@ -52,6 +52,7 @@ Game names and compatibility identifiers belong to their respective owners.
         Invoke-Checked $compiler (@('/target:exe','/define:TEST_HARNESS',('/out:'+$harness),'tests\NativeHarness.cs')+$common)
         Invoke-Checked $Python @('tests\run_native_tests.py',$harness,$exe)
         Invoke-Checked $Python @('tests\run_selection_tests.py',$harness)
+        Invoke-Checked $Python @('tests\run_workflow_ui.py')
     }
     Copy-Item -LiteralPath 'README.md','LICENSE','docs\RELEASE_NOTES.md' -Destination $packageDir -Force
     Copy-Item -LiteralPath $notices -Destination (Join-Path $packageDir 'THIRD_PARTY_NOTICES.txt') -Force

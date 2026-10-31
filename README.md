@@ -1,6 +1,6 @@
 # Nomad Drive Save Converter
 
-Version **2.0.0** · Windows 10/11 x64 · .NET Framework 4.8
+ Version **2.0.1** · Windows 10/11 x64 · .NET Framework 4.8
 
 An unofficial tool for moving **Nomad Drive Demo** saves to **Nomad Drive Early Access**, enabling multiplayer, or changing the player limit on selected worlds. The application and reports are in English.
 
@@ -8,12 +8,14 @@ An unofficial tool for moving **Nomad Drive Demo** saves to **Nomad Drive Early 
 
 ## Quick start
 
-1. Save and close the game. Run `NomadDriveSaveConverter-v2.0.0-win-x64.exe` from any writable folder, or extract the release ZIP and run its EXE.
+1. Save and close the game. Run `NomadDriveSaveConverter-v2.0.1-win-x64.exe` from any writable folder, or extract the release ZIP and run its EXE.
 2. Click **Find / refresh saves**. The default source searches both the Demo and Early Access profiles of your current Windows account. Use the source selector or **Browse** for another folder.
-3. Check only the worlds you want to process. Prefer your latest played `(converted)` world over its old original if you have continued playing.
+3. Tick the **Select** checkbox beside each world you want to process. Highlighting a row alone does not include it. **Set action** only assigns the operation to checked worlds; it does not copy anything.
+
+   Check only the worlds you want to process. Prefer your latest played `(converted)` world over its old original if you have continued playing.
 4. Choose an **Action** for each checked row. You can also set an action for all checked worlds using **For checked worlds** and **Set action**.
 5. Check **Destination saves** and **Early Access game**. Steam libraries are searched automatically; use **Browse** for a custom installation.
-6. Click **Preview selected** and read the report. Click **Back up and create copies** to commit those selections.
+6. Click **Preview selected** and read the report. **backup and create copies** is disabled until that preview succeeds. If preview reports an error, correct it and preview again. Click **backup and create copies** to commit only the checked selections.
 7. Start Early Access and load the new `(converted)` entries. Keep the original worlds until you have checked loading, saving and reloading the copies.
 
 The program is one standalone EXE. It runs directly on .NET Framework 4.8 without an embedded interpreter, executable engine or extracted runtime. Its icon includes a motorhome and a floppy disk. License text is available through **Licenses**.
@@ -24,7 +26,7 @@ The program is one standalone EXE. It runs directly on .NET Framework 4.8 withou
 | --- | --- |
 | Copy to Early Access | Migrates the selected world and keeps its current single-player / multiplayer mode and limit. Legacy format-5 limits are inferred from saved player profiles. |
 | Enable multiplayer | Uses at least 2 player slots; retains an existing higher limit. |
-| Set player limit | Uses the row's **New limit**, from 1 to 8. 1 is single-player; 2–8 is multiplayer. Supports increasing and decreasing the limit. |
+| Set player limit | Uses the row's **New limit**, from 1 to 8. 1 is single-player; 2â€“8 is multiplayer. Supports increasing and decreasing the limit. |
 
 The **New limit** control is editable only for **Set player limit**. Unchecked rows are ignored. You may choose different actions and limits in the same batch.
 
@@ -73,7 +75,7 @@ Requires Windows, .NET Framework 4.8 and Python 3.11 for tests and source packag
 .\scripts\build.ps1 -Python python
 ```
 
-`dist` contains the standalone EXE, a ZIP with documentation/licenses/checksums, and a complete source archive. The build runs 61 Python reference cases, the same 61 cases against the native C# implementation with 53 independent decoded-save comparisons, and 21 selected-operation cases. Tests use synthetic worlds and temporary folders; no game files or personal saves are required.
+`dist` contains the standalone EXE, a ZIP with documentation/licenses/checksums, and a complete source archive. The build runs 61 Python reference cases, the same 61 cases against the native C# implementation with 53 independent decoded-save comparisons, 21 selected-operation cases, and 18 Windows Forms workflow checks (including a corrupt unchecked world). Tests use synthetic worlds and temporary folders; no game files or personal saves are required.
 
 The shipping C# implementation is under `src/engine/*.cs` and `src/gui`. The Python engine is a legacy-format reference used by regression tests; the current selection workflow is implemented in C#. `early-access.json` is the Early Access mapping; `mapping.json` retains the older Demo mapping for legacy command-line compatibility and regression tests.
 

@@ -1,19 +1,16 @@
-# 2.0.0
+# 2.0.1
 
 By **robinhugy**
 
-- Move selected legacy or current-format Demo worlds to Nomad Drive Early Access 1.0.
-- Search both current-user save profiles; choose individual worlds, actions and player limits.
-- Enable multiplayer only on checked worlds, or set each selected world's cap from 1 to 8.
-- Decrease caps while retaining every saved player profile and inventory.
-- Read-only startup and previews: creating copies requires the explicit action button.
-- Preserve current-format save bytes when no mode change is requested; keep progress, objects, paint and sidecars.
-- Back up selected sources, create separate `(converted)` slots and refuse stale previews or unsupported targets.
-- Retain optional legacy floating-loot cleanup and the motorhome/floppy icon.
-- One standalone .NET Framework 4.8 EXE; author and application text remain English.
+- Renamed the copy button to **backup and create copies**.
+- Added a visible four-step guide and checked-world count.
+- **Set action** reports how many checked worlds received an action and explains that it does not copy files.
+- Added a clear message when no checkbox is selected. Highlighting a row alone never includes it in an operation.
+- Explained that copying becomes available only after a successful **Preview selected** operation; preview errors keep copying disabled.
+- Repeating **Set action** with unchanged settings preserves an already successful preview.
+- Actions, previews, backups and copies operate only on checked worlds. An unreadable unchecked save does not block a selected operation.
+- Added 18 Windows Forms checks covering the workflow, selection isolation, read-only previews, backup creation and unchanged source saves.
 
-Validation: legacy regression suite, 53 independent decoded-save comparisons, 21 selection cases, interface checks, and 10 real-world copies accepted by the full game's native save/manifest readers. Seven current-format worlds were copied byte for byte. In-game load/save/reload remains a separate check.
+Demo-to-Early-Access conversion, the 1–8 player limits, save-format support and target-game compatibility are unchanged from 2.0.0. This release remains one standalone English-language .NET Framework EXE.
 
-Antivirus status: earlier releases received detections. Use a VirusTotal report matching this release's exact EXE and SHA-256; older reports refer to different files.
-
-Close the game before creating copies. Load the new `(converted)` world afterward. Original saves remain unchanged. See README for compatibility, backup locations and world-generation limitations.
+To copy worlds: check their **Select** boxes, choose **Copy to Early Access**, click **Set action** if needed, then **Preview selected**, then **backup and create copies**. Originals remain unchanged; results have the **(converted)** suffix.

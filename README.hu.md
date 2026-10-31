@@ -1,17 +1,17 @@
 # Nomad Drive Save Converter
 
-Készítő: **robinhugy** · Verzió: **2.0.0**
+Készítő: **robinhugy** · Verzió: **2.0.1**
 
 Demo mentések átvitele a Nomad Drive Early Access 1.0-ba, multiplayer bekapcsolása és a játékosszám módosítása kiválasztott mentéseken. A program és a jelentések angol nyelvűek. Windows 10/11 x64 és .NET Framework 4.8 szükséges; a kiadás egyetlen önálló EXE.
 
 ## Használat
 
-1. Ments, majd zárd be teljesen a játékot. Indítsd a `NomadDriveSaveConverter-v2.0.0-win-x64.exe` fájlt.
+1. Ments, majd zárd be teljesen a játékot. Indítsd a `NomadDriveSaveConverter-v2.0.1-win-x64.exe` fájlt.
 2. A **Find / refresh saves** kilistázza a jelenlegi Windows-felhasználó demo- és Early Access-mentéseit. Másik forráshoz válaszd a **Custom folder** lehetőséget vagy a **Browse** gombot.
-3. Csak a kívánt világokat pipáld ki. Ha már játszottál egy átalakított világban, annak legfrissebb példányát válaszd a régi eredeti helyett.
+3. A **Select** oszlopban csak a kívánt világok melletti jelölőnégyzetet pipáld ki. A sor kiemelése önmagában nem választja ki a mentést. A **Set action** csak a pipás sorok műveletét állítja be, fájlt nem másol. Ha már játszottál egy átalakított világban, annak legfrissebb példányát válaszd a régi eredeti helyett.
 4. Mentésenként válassz műveletet az **Action** oszlopban. Több kijelölt sorra a **For checked worlds** és **Set action** is használható.
 5. Ellenőrizd a cél mentésmappát (**Destination saves**) és a teljes játék mappáját (**Early Access game**). Egyedi telepítésnél használd a **Browse** gombot.
-6. **Preview selected**: ellenőrzés és előnézet, fájlmódosítás nélkül. **Back up and create copies**: biztonsági mentés és az új világok létrehozása.
+6. **Preview selected**: ellenőrzés és előnézet, fájlmódosítás nélkül. Sikeres előnézet után aktiválódik a **backup and create copies** gomb: biztonsági mentést és új világokat kizárólag a kipipált mentésekből készít. Hiba esetén javítsd a jelzett problémát, majd indíts új előnézetet.
 7. Az Early Accessben a `(converted)` nevű új világokat töltsd be. Az eredetiket tartsd meg, amíg a betöltést, mentést és újratöltést is kipróbáltad.
 
 Induláskor semmi nincs kijelölve és semmit nem alakít át automatikusan. Minden eredmény külön mentés, az eredetiket nem írja felül.
@@ -44,7 +44,7 @@ Windows, .NET Framework 4.8 és Python 3.11 szükséges:
 .\scripts\build.ps1 -Python python
 ```
 
-A `dist` mappába kerül az EXE, a kiadási ZIP és a teljes forráscsomag. A fordítás lefuttatja a régi formátum tesztjeit és a 21 új kiválasztási tesztet. A részletes technikai leírás az angol `README.md` fájlban található.
+A `dist` mappába kerül az EXE, a kiadási ZIP és a teljes forráscsomag. A fordítás lefuttatja a régi formátum tesztjeit a 21 kiválasztási tesztet és a 18 felületi munkafolyamat-ellenőrzést. A részletes technikai leírás az angol `README.md` fájlban található.
 
 ## Vírusirtó-ellenőrzés
 
