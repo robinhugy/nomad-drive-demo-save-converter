@@ -1,6 +1,9 @@
-# Nomad Drive Demo - Save Converter
+# Nomad Drive Demo/Early Access - Save Converter
 
-An unofficial Windows tool that converts legacy **Nomad Drive Demo** worlds to the updated save format and fixes the saved player limit that can block multiplayer.
+An unofficial Windows tool that converts legacy **Nomad Drive Demo** and **Nomad Drive Early Access** worlds to the updated save format and fixes the saved player limit that can block multiplayer.
+
+### Compatibility verification — 31 October 2026
+Verified compatibility with the current Early Access 1.0 (build:26243889).
 
 **Run the EXE: it finds your saves, makes backups and converts all eligible worlds automatically.** New worlds are named **`(converted)`**. Existing slots are never overwritten.
 
